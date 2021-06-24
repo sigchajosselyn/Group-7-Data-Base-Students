@@ -12,7 +12,9 @@ import databasestudent.model.ID;
 
 import databasestudent.model.Subject;
 import databasestudent.model.University;
+import databasestudent.model.StudentCompilation;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -38,6 +40,9 @@ public class DatabaseStudent {
         String jsonUniversity = "";
         String jsonCourse = "";
         String jsonSubjects = "";
+       
+        
+        
         
         
         Scanner enter = new Scanner(System.in);
@@ -50,9 +55,10 @@ public class DatabaseStudent {
          
          
          
+         
          boolean salir= false;
          int option;
-       while(!salir){
+         while(!salir){
            System.out.println("Save options menu");
            System.out.println("\n Welcome to the student database "+" \n ");
            System.out.println("\n 1.Enter Information Student ");
@@ -66,6 +72,7 @@ public class DatabaseStudent {
            
             switch(option){
                case 1:
+               
             
                    System.out.println("Enter Information on Student");
              
@@ -130,6 +137,29 @@ public class DatabaseStudent {
             System.out.println("jsonUniversity ->"+ jsonUniversity);
             System.out.println("jsonCourse ->"+ jsonCourse);
             System.out.println("jsonSubject ->"+ jsonSubjects);
+          
+            
+            
+            switch(option){
+                case 2:
+                    
+                   do{
+                      String name =JOptionPane.showInputDialog("ingrese el nombre");
+                      salir = studentcomplitaion.buscarPorNombre(name);
+            
+                       
+                   }while(salir);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+            }
+                 
+            
             
            
            
