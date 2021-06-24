@@ -10,7 +10,7 @@ package databasestudent.model;
  * @author Josselyn Sigcha Future´s ProgrammersTech ESPE-DCC0
  */
 public class University {
-    private String name;
+    private String nameUniversity;
     private String racing;
     
     
@@ -30,28 +30,28 @@ public class University {
         
     } 
 
-    public University(String name, String racing) {
-        this.name = name;
+    public University(String nameUniversity, String racing) {
+        this.nameUniversity = nameUniversity;
         this.racing = racing;
     }
 
     @Override
     public String toString() {
-        return "University{" + "name=" + getName() + ", racing=" + getRacing() + '}';
+        return "University{" + "nameUniversity=" + getNameUniversity() + ", racing=" + getRacing() + '}';
     }
 
     /**
-     * @return the name
+     * @return the nameUniversity
      */
-    public String getName() {
-        return name;
+    public String getNameUniversity() {
+        return nameUniversity;
     }
 
     /**
-     * @param name the name to set
+     * @param nameUniversity the nameUniversity to set
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setNameUniversity(String nameUniversity) {
+        this.nameUniversity = nameUniversity;
     }
 
     /**
@@ -67,7 +67,7 @@ public class University {
     public void setRacing(String racing) {
         this.racing = racing;
     }
-    
+
    
     }
 
