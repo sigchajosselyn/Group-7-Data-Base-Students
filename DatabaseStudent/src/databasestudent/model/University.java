@@ -11,14 +11,7 @@ package databasestudent.model;
  */
 public class University {
     private String name;
-    private String student;
-    private int course;
-    private string racing;
-
-    @Override
-    public String toString() {
-        return "University{" + "name=" + name + ", student=" + student + ", course=" + course + ", racing=" + racing + '}';
-    }
+    private String racing;
     
     
     
@@ -34,7 +27,18 @@ public class University {
     public void placeRacing()
     {
         
+        
     } 
+
+    public University(String name, String racing) {
+        this.name = name;
+        this.racing = racing;
+    }
+
+    @Override
+    public String toString() {
+        return "University{" + "name=" + getName() + ", racing=" + getRacing() + '}';
+    }
 
     /**
      * @return the name
@@ -51,55 +55,19 @@ public class University {
     }
 
     /**
-     * @return the student
-     */
-    public String getStudent() {
-        return student;
-    }
-
-    /**
-     * @param student the student to set
-     */
-    public void setStudent(String student) {
-        this.student = student;
-    }
-
-    /**
-     * @return the course
-     */
-    public int getCourse() {
-        return course;
-    }
-
-    /**
-     * @param course the course to set
-     */
-    public void setCourse(int course) {
-        this.course = course;
-    }
-
-    /**
      * @return the racing
      */
-    public string getRacing() {
+    public String getRacing() {
         return racing;
     }
 
     /**
      * @param racing the racing to set
      */
-    public void setRacing(string racing) {
+    public void setRacing(String racing) {
         this.racing = racing;
     }
-
-    public void setRacing(String telecomunications_Engineering) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setCourse(String exact_Sciences) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
    
     }
 

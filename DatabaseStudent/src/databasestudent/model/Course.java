@@ -10,75 +10,48 @@ package databasestudent.model;
  * @author Josselyn Sigcha Future´s ProgrammersTech ESPE-DCC0
  */
 public class Course {
-    private int number;
-    private int identificationStudent;
-    private int age;
+    private String semester;
+    private int nrc;
+
+    public Course(String semester, int nrc) {
+        this.semester = semester;
+        this.nrc = nrc;
+    }
 
     @Override
     public String toString() {
-        return "Course{" + "number=" + number + ", identificationStudent=" + identificationStudent + ", age=" + age + '}';
-    }
-    
-    
-    
-    
-    
-    public void determineNumber()
-    {        
-    
-    }
-    public void detailAge()
-    {
-        
-    }
-    public void separateID()
-    {
-        
+        return "Course{" + "semester=" + getSemester() + ", nrc=" + getNrc() + '}';
     }
 
     /**
-     * @return the number
+     * @return the semester
      */
-    public int getNumber() {
-        return number;
+    public String getSemester() {
+        return semester;
     }
 
     /**
-     * @param number the number to set
+     * @param semester the semester to set
      */
-    public void setNumber(int number) {
-        this.number = number;
+    public void setSemester(String semester) {
+        this.semester = semester;
     }
 
     /**
-     * @return the identificationStudent
+     * @return the nrc
      */
-    public int getIdentificationStudent() {
-        return identificationStudent;
+    public int getNrc() {
+        return nrc;
     }
 
     /**
-     * @param identificationStudent the identificationStudent to set
+     * @param nrc the nrc to set
      */
-    public void setIdentificationStudent(int identificationStudent) {
-        this.identificationStudent = identificationStudent;
-    }
-
-    /**
-     * @return the age
-     */
-    public int getAge() {
-        return age;
-    }
-
-    /**
-     * @param age the age to set
-     */
-    public void setAge(int age) {
-        this.age = age;
+    public void setNrc(int nrc) {
+        this.nrc = nrc;
     }
     
-
+    
     
         
     }
