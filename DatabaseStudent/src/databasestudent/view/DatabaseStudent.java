@@ -12,9 +12,8 @@ import databasestudent.model.ID;
 
 import databasestudent.model.Subject;
 import databasestudent.model.University;
-import databasestudent.model.StudentCompilation;
 import java.util.Scanner;
-import javax.swing.JOptionPane;
+
 
 
 /**
@@ -51,6 +50,8 @@ public class DatabaseStudent {
          Subject subject [] = new Subject [5] ;
          Course course [] = new Course[5] ;
          University university [] = new University[5];
+         
+        
          
          
          
@@ -137,24 +138,9 @@ public class DatabaseStudent {
             System.out.println("jsonUniversity ->"+ jsonUniversity);
             System.out.println("jsonCourse ->"+ jsonCourse);
             System.out.println("jsonSubject ->"+ jsonSubjects);
-          
             
             
-            switch(option){
-                case 2:
-                    
-                   do{
-                      String name =JOptionPane.showInputDialog("ingrese el nombre");
-                      salir = studentcomplitaion.buscarPorNombre(name);
             
-                       
-                   }while(salir);
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
             }
@@ -185,6 +171,5 @@ public class DatabaseStudent {
         
        }   
        
-       }   
-}
+       }
 }
