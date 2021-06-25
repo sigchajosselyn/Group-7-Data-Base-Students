@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
 /**
  *
  * @author Josselyn Sigcha Future´s ProgrammersTech ESPE-DCC0
@@ -29,10 +28,9 @@ public class RegistrationSystem {
          int option;
        while(!salir){
         
-           
            System.out.println("\n Welcome to the student database "+" \n ");
            System.out.println("\n 1.Enter Information Student ");
-           System.out.println("\n 2.Search on Student ");
+           System.out.println("\n 2.Search on the student ");
            System.out.println("\n 3.Exit");
            
            System.out.println("Enter a number ");
@@ -61,7 +59,7 @@ public class RegistrationSystem {
         
         
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your Student Information ");
+        System.out.println("Enter you student Information ");
          StudentsInformation si1= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
         StudentsInformation si2= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
         StudentsInformation si3= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
@@ -108,7 +106,7 @@ public class RegistrationSystem {
           FileWriter file = new FileWriter("./files/StudentDataBase.json");
          
            Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your Student Information ");
+        System.out.println("Enter you student Information ");
         StudentsInformation si1= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
         StudentsInformation si2= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
         StudentsInformation si3= new StudentsInformation(nameStudent=sc.next(), numbersId=sc.nextInt(), civilStatus=sc.next(), sex=sc.next(), nameUniversity = sc.next(),nrc=sc.nextInt(),nameSubjects=sc.next());
@@ -140,12 +138,8 @@ public class RegistrationSystem {
             System.out.println("jsonStudenInformation ->" + jsonsi5);
            
 
-         
-            
-             System.out.println("Enter Id Students");
-        
-        
-        
+             System.out.println("Enter id students");
+       
         
          }
         
