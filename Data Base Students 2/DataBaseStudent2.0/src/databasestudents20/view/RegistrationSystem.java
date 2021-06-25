@@ -6,14 +6,17 @@
 package databasestudents20.view;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+// NOT LIBRIES EXIST
 
-
+// NOT EXIST OBJECT CLASSES
 import databasestudent20.model.StudentsInformation;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+
 
 /**
  *
@@ -34,10 +37,10 @@ public class RegistrationSystem {
            System.out.println("\n 3.Exit");
            
            System.out.println("Enter a number ");
-             option = enter.nextInt();
+           option = enter.nextInt();
         
-    
-}
+   }
+       
         int numbersId;
        
         String nameStudent;
