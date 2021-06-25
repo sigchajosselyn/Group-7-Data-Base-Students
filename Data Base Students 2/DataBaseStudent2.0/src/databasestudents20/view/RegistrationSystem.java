@@ -17,6 +17,16 @@ public class RegistrationSystem {
         
          Scanner enter = new Scanner(System.in);
         RegistrationSystem bus =  new RegistrationSystem();
+        boolean salir= false;
+         int option;
+       while(!salir){
+        
+           
+           System.out.println("\n Welcome to the student database "+" \n ");
+           System.out.println("\n 1.Enter Information Student ");
+           System.out.println("\n 2.Search on Student ");
+        
+        
     
 }
 }

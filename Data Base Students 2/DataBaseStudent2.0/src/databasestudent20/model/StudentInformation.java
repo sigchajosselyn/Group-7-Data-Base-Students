@@ -16,6 +16,11 @@ public class StudentInformation {
     private String civilStatus;
     private String sex;
      private String nameUniversity;
+      private String racing;
+     private String semester;
+    private int nrc;
+     private String nameSubject;
+    private int type;
     
     
 }
