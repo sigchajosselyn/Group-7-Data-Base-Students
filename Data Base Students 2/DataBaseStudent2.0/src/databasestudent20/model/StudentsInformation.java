@@ -35,6 +35,10 @@ public class StudentsInformation {
         this.type = type;
     }
 
+    public StudentsInformation(String next, int nextInt, String next0, String next1, String next2, int nextInt0, String next3) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public String toString() {
         return "StudentInformation{" + "nameStudent=" + getNameStudent() + ", numbersId=" + getNumbersId() + ", civilStatus=" + getCivilStatus() + ", sex=" + getSex() + ", nameUniversity=" + getNameUniversity() + ", racing=" + getRacing() + ", semester=" + getSemester() + ", nrc=" + getNrc() + ", nameSubject=" + getNameSubject() + ", type=" + getType() + '}';
