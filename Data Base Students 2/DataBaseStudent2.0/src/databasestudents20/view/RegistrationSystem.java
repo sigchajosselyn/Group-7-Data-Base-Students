@@ -6,6 +6,7 @@
 package databasestudents20.view;
 
 import databasestudent20.model.StudentsInformation;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +51,12 @@ public class RegistrationSystem {
        
         
         List<StudentsInformation> studentsInformationList = new ArrayList<StudentsInformation>();
+         FileWriter file = new FileWriter("./files/StudentDataBase.json");
+                
         
+            
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your Student Information ");
 }
 }
