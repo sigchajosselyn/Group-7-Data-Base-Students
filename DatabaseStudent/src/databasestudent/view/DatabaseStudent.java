@@ -12,6 +12,7 @@ import databasestudent.model.ID;
 
 import databasestudent.model.Subject;
 import databasestudent.model.University;
+import java.io.FileWriter;
 import java.util.Scanner;
 
 
@@ -38,6 +39,8 @@ public class DatabaseStudent {
         String jsonUniversity = "";
         String jsonCourse = "";
         String jsonSubjects = "";
+
+        
         
         
         Scanner enter = new Scanner(System.in);
@@ -70,6 +73,11 @@ public class DatabaseStudent {
                    System.out.println("Enter Information on Student");
              
          for (int i=0 ; i<2;i++){
+             
+           
+                        
+                
+                        
              System.out.println(" Enter the Id number: ");
              numbersId = enter.nextInt();
              
