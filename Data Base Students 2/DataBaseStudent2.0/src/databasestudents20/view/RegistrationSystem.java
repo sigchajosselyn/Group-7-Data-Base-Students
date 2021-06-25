@@ -5,7 +5,10 @@
  */
 package databasestudents20.view;
 
+import databasestudent20.model.StudentsInformation;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -35,6 +38,18 @@ public class RegistrationSystem {
         int numbersId;
        
         String nameStudent;
-        int age;
+        String sex;
+        String civilStatus;
+        String nameUniversity;
+        String racing;
+        int nrc;
+        String semester;
+        String nameSubjects;
+        String jsonStudenInformation = "";
+        
+       
+        
+        List<StudentsInformation> studentsInformationList = new ArrayList<StudentsInformation>();
+        
 }
 }

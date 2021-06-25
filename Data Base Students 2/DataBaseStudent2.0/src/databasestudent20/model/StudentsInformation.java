@@ -9,7 +9,7 @@ package databasestudent20.model;
  *
  * @author Josselyn Sigcha Future´s ProgrammersTech ESPE-DCC0
  */
-public class StudentInformation {
+public class StudentsInformation {
     
     private String nameStudent;
     private int numbersId;
@@ -22,7 +22,7 @@ public class StudentInformation {
      private String nameSubject;
     private int type;
 
-    public StudentInformation(String nameStudent, int numbersId, String civilStatus, String sex, String nameUniversity, String racing, String semester, int nrc, String nameSubject, int type) {
+    public StudentsInformation(String nameStudent, int numbersId, String civilStatus, String sex, String nameUniversity, String racing, String semester, int nrc, String nameSubject, int type) {
         this.nameStudent = nameStudent;
         this.numbersId = numbersId;
         this.civilStatus = civilStatus;
