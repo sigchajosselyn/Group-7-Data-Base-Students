@@ -25,8 +25,16 @@ public class RegistrationSystem {
            System.out.println("\n Welcome to the student database "+" \n ");
            System.out.println("\n 1.Enter Information Student ");
            System.out.println("\n 2.Search on Student ");
-        
+           System.out.println("\n 3.Exit");
+           
+           System.out.println("Enter a number ");
+             option = enter.nextInt();
         
     
+}
+        int numbersId;
+       
+        String nameStudent;
+        int age;
 }
 }
