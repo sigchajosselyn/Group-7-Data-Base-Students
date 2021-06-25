@@ -11,4 +11,11 @@ package databasestudent20.model;
  */
 public class StudentInformation {
     
+    private String nameStudent;
+    private int numbersId;
+    private String civilStatus;
+    private String sex;
+     private String nameUniversity;
+    
+    
 }

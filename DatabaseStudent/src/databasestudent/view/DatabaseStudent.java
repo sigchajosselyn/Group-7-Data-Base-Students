@@ -7,10 +7,10 @@ package databasestudent.view;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import databasestudent.model.Course;
-import databasestudent.model.ID;
 
-import databasestudent.model.Subject;
+
+
+
 import databasestudent.model.University;
 import java.io.FileWriter;
 import java.util.Scanner;
