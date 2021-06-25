@@ -57,8 +57,8 @@ public class RegistrationSystem {
         List<StudentsInformation> studentsInformationList = new ArrayList<StudentsInformation>();
          FileWriter file = new FileWriter("./files/StudentDataBase.json");
                 
+     
         
-            
         
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your Student Information ");
