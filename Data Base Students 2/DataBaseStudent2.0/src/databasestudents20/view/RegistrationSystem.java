@@ -29,7 +29,7 @@ public class RegistrationSystem {
             System.out.println("1.-Ingresar Cedula");
             System.out.println("2.-Buscar Alumno");
             System.out.println("3.-Salir");
-            System.out.println("Sleccione su opcion: ");
+            System.out.println("Seleccione su opcion: ");
             opcion = RegistrationSystem1.datoInt();
             
             switch(opcion){
