@@ -151,7 +151,7 @@ public class RegistrationSystem {
             System.out.println("Datos: " + students[pos].toString());
             System.out.println("1.-KEEP DATA ???");
             System.out.println("2.-DELETE");
-            System.out.println("Ingrese opcion");
+            System.out.println("Option enter....");
             accion = RegistrationSystem1.datoInt();
             
             
