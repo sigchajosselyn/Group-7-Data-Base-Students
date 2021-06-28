@@ -26,10 +26,10 @@ public class RegistrationSystem {
         do{
             System.out.println("--Registro de Alumnos--");
             System.out.println("------------------");
-            System.out.println("1.-Ingresar Cedula");
-            System.out.println("2.-Buscar Alumno");
-            System.out.println("3.-Salir");
-            System.out.println("Seleccione su opcion: ");
+            System.out.println("1.-Enter ID (Cedula)");
+            System.out.println("2.-Search Student");
+            System.out.println("3.-Exit");
+            System.out.println("Select your option....: ");
             opcion = RegistrationSystem1.datoInt();
             
             switch(opcion){
