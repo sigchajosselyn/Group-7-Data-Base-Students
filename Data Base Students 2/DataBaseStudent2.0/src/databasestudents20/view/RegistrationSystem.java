@@ -123,10 +123,10 @@ public class RegistrationSystem {
         System.out.println("Grade point average: " + promedio);
         
         if(promedio >= 3.95) {
-            estado = "Aprobado";
+            estado = "Approved";
             System.out.println(estado);
         } else {
-            estado = "Reprobado";
+            estado = "Reprobate";
             System.out.println(estado);
         }
         
