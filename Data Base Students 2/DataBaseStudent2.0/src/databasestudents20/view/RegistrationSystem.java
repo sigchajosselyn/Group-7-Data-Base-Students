@@ -4,14 +4,25 @@
  * and open the template in the editor.
  */
 package databasestudents20.view;
+<<<<<<< HEAD
+=======
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+// NOT LIBRIES EXIST
+
+// NOT EXIST OBJECT CLASSES
+>>>>>>> 5126c8bd77710bd0e7bae735acb38567dfd74a48
 import databasestudent20.model.StudentsInformation;
 import java.io.IOException;
+
+
 
 /**
  *
  * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
  */
 public class RegistrationSystem {
+<<<<<<< HEAD
     
     static StudentsInformation students[] = null;
     
@@ -52,6 +63,45 @@ public class RegistrationSystem {
             }
         } while (opcion != 4);
         System.exit(0);
+=======
+    public static void main(String[] args) throws IOException {
+        
+         Scanner enter = new Scanner(System.in);
+        RegistrationSystem bus =  new RegistrationSystem();
+        boolean salir= false;
+         int option;
+       while(!salir){
+        
+           System.out.println("\n Welcome to the student database "+" \n ");
+           System.out.println("\n 1.Enter Information Student ");
+           System.out.println("\n 2.Search on the student ");
+           System.out.println("\n 3.Exit");
+           
+           System.out.println("Enter a number ");
+           option = enter.nextInt();
+        
+   }
+       
+        int numbersId;
+       
+        String nameStudent;
+        String sex;
+        String civilStatus;
+        String nameUniversity;
+        String racing;
+        int nrc;
+        String semester;
+        String nameSubjects;
+        String jsonStudenInformation = "";
+        
+       
+        
+        List<StudentsInformation> studentsInformationList = new ArrayList<StudentsInformation>();
+         FileWriter file = new FileWriter("./files/StudentDataBase.json");
+                
+     
+        
+>>>>>>> 5126c8bd77710bd0e7bae735acb38567dfd74a48
         
     }
 
