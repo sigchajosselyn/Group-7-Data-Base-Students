@@ -26,7 +26,7 @@ public class RegistrationSystem {
         do{
             System.out.println("--Students Registration--");
             System.out.println("------------------");
-            System.out.println("1.-Enter ID (Cedula)");
+            System.out.println("1.-Enter ID");
             System.out.println("2.-Search Student");
             System.out.println("3.-Exit");
             System.out.println("Select your option....: ");
@@ -37,7 +37,7 @@ public class RegistrationSystem {
                     if (cont < 3) {
                         agregarAlumno();
                     }else{
-                        System.out.println("mistake!");
+                        System.out.println("error!");
                     } 
                     break;
                 case 2:
@@ -47,7 +47,7 @@ public class RegistrationSystem {
                     listarAlumno();
                     break;
                 case 4:
-                    System.out.println("close code");
+                    System.out.println("cerrar codigo");
              
             }
         } while (opcion != 4);
