@@ -276,17 +276,17 @@ public class RegistrationSystem {
                  students[pos].setNameSubject(nameSubject);
                  break;
             case 10:
-                 System.out.println("Nota 1");
+                 System.out.println("Note 1");
                  n1 = RegistrationSystem1.datoDouble();
                  students[pos].setN1(n1);
                  break;
              case 11:
-                 System.out.println("Nota 2");
+                 System.out.println("Note 2");
                  n2 = RegistrationSystem1.datoDouble();
                  students[pos].setN2(n2);
                  break; 
              case 12:
-                 System.out.println("Nota 3");
+                 System.out.println("Note 3");
                  n3 = RegistrationSystem1.datoDouble();
                  students[pos].setN3(n3);
                  break;   
