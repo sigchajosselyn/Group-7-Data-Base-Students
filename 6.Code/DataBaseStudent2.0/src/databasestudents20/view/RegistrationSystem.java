@@ -109,13 +109,13 @@ public class RegistrationSystem {
         System.out.print("NameSubject: ");
         nameSubject = RegistrationSystem1.dato();
         
-        System.out.print("Note 1: ");
+        System.out.print("Nota N 1: ");
         n1 = RegistrationSystem1.datoDouble();
         
-        System.out.print("Note 2: ");
+        System.out.print("Nota N 2: ");
         n2 = RegistrationSystem1.datoDouble();
         
-        System.out.print("Note 3: ");
+        System.out.print("Nota N 3: ");
         n3 = RegistrationSystem1.datoDouble();
         
         promedio = (n1 + n2 + n3)/3;
