@@ -149,8 +149,8 @@ public class RegistrationSystem {
         
         if (pos >= 0) {
             System.out.println("Datos: " + students[pos].toString());
-            System.out.println("1.-GUARDAR DATOS ???");
-            System.out.println("2.-BORRAR");
+            System.out.println("1.-KEEP DATA ???");
+            System.out.println("2.-DELETE");
             System.out.println("Option enter....");
             accion = RegistrationSystem1.datoInt();
             
@@ -214,7 +214,7 @@ public class RegistrationSystem {
      while (seguir == 1){
          System.out.println("\n\n--Menu de estudiantes--");
          System.out.println("---------------------------");
-         System.out.println("1.-Cambiar cedula ");
+         System.out.println("1.-Cambiar ID ");
          System.out.println("2.-Cambiar name ");
          System.out.println("3.-Cambiar civilStatus");
          System.out.println("4.-Cambiar sex");
@@ -223,9 +223,9 @@ public class RegistrationSystem {
          System.out.println("7.-Cambiar semester");
          System.out.println("8.-Cambiar nrc");
          System.out.println("9.-Cambiar nameSubject");
-         System.out.println("10.-Cambiar nota 1");
-         System.out.println("11.-Cambiar nota 2");
-         System.out.println("12.-Cambiar nota 3");
+         System.out.println("10.-Cambiar note 1");
+         System.out.println("11.-Cambiar note 2");
+         System.out.println("12.-Cambiar note 3");
          System.out.println(".-Ingrese la opcion: ");
          opcion = RegistrationSystem1.datoInt();
          
