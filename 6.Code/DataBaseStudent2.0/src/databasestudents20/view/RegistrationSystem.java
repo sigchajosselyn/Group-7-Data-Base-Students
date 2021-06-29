@@ -40,7 +40,7 @@ public class RegistrationSystem {
                     if (cont < 3) {
                         agregarAlumno();
                     }else{
-                        System.out.println("Error!");
+                        System.out.println("error!");
                     } 
                     break;
                 case 2:
@@ -50,7 +50,7 @@ public class RegistrationSystem {
                     listarAlumno();
                     break;
                 case 4:
-                    System.out.println("Cerrando el codigo");
+                    System.out.println("cerrar el codigo");
              
             }
         } while (opcion != 4);
@@ -129,7 +129,7 @@ public class RegistrationSystem {
             estado = "Approved";
             System.out.println(estado);
         } else {
-            estado = "Reprobate";
+            estado = "Reproved";
             System.out.println(estado);
         }
         
@@ -237,7 +237,7 @@ public class RegistrationSystem {
      while (seguir == 1){
          System.out.println("\n\n--Menu de estudiantes--");
          System.out.println("---------------------------");
-         System.out.println("1.-Cambiar cedula ");
+         System.out.println("1.-Cambiar ID ");
          System.out.println("2.-Cambiar name ");
          System.out.println("3.-Cambiar civilStatus");
          System.out.println("4.-Cambiar sex");
@@ -246,9 +246,9 @@ public class RegistrationSystem {
          System.out.println("7.-Cambiar semester");
          System.out.println("8.-Cambiar nrc");
          System.out.println("9.-Cambiar nameSubject");
-         System.out.println("10.-Cambiar nota 1");
-         System.out.println("11.-Cambiar nota 2");
-         System.out.println("12.-Cambiar nota 3");
+         System.out.println("10.-Cambiar note 1");
+         System.out.println("11.-Cambiar note 2");
+         System.out.println("12.-Cambiar note 3");
          System.out.println(".-Ingrese la opcion: ");
          opcion = RegistrationSystem1.datoInt();
          
@@ -299,17 +299,17 @@ public class RegistrationSystem {
                  students[pos].setNameSubject(nameSubject);
                  break;
             case 10:
-                 System.out.println("Nota 1");
+                 System.out.println("Note 1");
                  n1 = RegistrationSystem1.datoDouble();
                  students[pos].setN1(n1);
                  break;
              case 11:
-                 System.out.println("Nota 2");
+                 System.out.println("Note 2");
                  n2 = RegistrationSystem1.datoDouble();
                  students[pos].setN2(n2);
                  break; 
              case 12:
-                 System.out.println("Nota 3");
+                 System.out.println("Note 3");
                  n3 = RegistrationSystem1.datoDouble();
                  students[pos].setN3(n3);
                  break;   
