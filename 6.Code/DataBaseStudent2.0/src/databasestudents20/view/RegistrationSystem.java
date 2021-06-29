@@ -47,7 +47,7 @@ public class RegistrationSystem {
                     listarAlumno();
                     break;
                 case 4:
-                    System.out.println("Closing code");
+                    System.out.println("cerrar codigo");
              
             }
         } while (opcion != 4);
