@@ -21,9 +21,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-<<<<<<< HEAD
-/Data Base Students 2/DataBaseStudent2.0/build/
-/Data Base Students 2/DataBaseStudent2.0/dist/
-=======
-/Data Base Students 2/DataBaseStudent2.0/build/
->>>>>>> 5126c8bd77710bd0e7bae735acb38567dfd74a48
+
