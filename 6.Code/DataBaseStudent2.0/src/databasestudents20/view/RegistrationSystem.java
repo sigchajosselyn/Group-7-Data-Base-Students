@@ -149,8 +149,8 @@ public class RegistrationSystem {
         
         if (pos >= 0) {
             System.out.println("Datos: " + students[pos].toString());
-            System.out.println("1.-KEEP DATA ???");
-            System.out.println("2.-DELETE");
+            System.out.println("1.-GUARDAR DATOS ???");
+            System.out.println("2.-BORRAR");
             System.out.println("Option enter....");
             accion = RegistrationSystem1.datoInt();
             
