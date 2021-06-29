@@ -37,7 +37,7 @@ public class RegistrationSystem {
                     if (cont < 3) {
                         agregarAlumno();
                     }else{
-                        System.out.println("mistake!");
+                        System.out.println("error!");
                     } 
                     break;
                 case 2:
