@@ -4,7 +4,10 @@
  * and open the template in the editor.
  */
 package databasestudents20.view;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import databasestudent20.model.StudentsInformation;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -24,7 +27,7 @@ public class RegistrationSystem {
         int opcion = 0;
         
         do{
-            System.out.println("--Registro de Alumnos--");
+            System.out.println("--Students Registration--");
             System.out.println("------------------");
             System.out.println("1.-Enter ID (Cedula)");
             System.out.println("2.-Search Student");
@@ -37,7 +40,7 @@ public class RegistrationSystem {
                     if (cont < 3) {
                         agregarAlumno();
                     }else{
-                        System.out.println("Error!");
+                        System.out.println("error!");
                     } 
                     break;
                 case 2:
@@ -47,7 +50,7 @@ public class RegistrationSystem {
                     listarAlumno();
                     break;
                 case 4:
-                    System.out.println("Cerrando el codigo");
+                    System.out.println("cerrar el codigo");
              
             }
         } while (opcion != 4);
@@ -72,17 +75,17 @@ public class RegistrationSystem {
         double n2 = 0;
         double n3 = 0;
         double promedio = 0;
+        String jsonStudentsInformation = "";
         
-      
-        
+        FileWriter file = new FileWriter("./files/DataBaseStudent2.0.json");
         
         
         System.out.println("\n\n\n");
         System.out.println("----------------");
-        System.out.println("--Datos de Estudiante--");
+        System.out.println("--Student Data--");
         System.out.println("------------------");
         
-        System.out.print("Cedula: ");
+        System.out.print("CI: ");
         cedula = RegistrationSystem1.dato();
         
         System.out.print("Name: ");
@@ -126,13 +129,31 @@ public class RegistrationSystem {
             estado = "Approved";
             System.out.println(estado);
         } else {
-            estado = "Reprobate";
+            estado = "Reproved";
             System.out.println(estado);
         }
         
+       
+           
         students[cont] = new StudentsInformation(cedula, name, civilStatus, sex, nameUniversity, racing, semester, nrc, nameSubject, estado, n1, n2, n3, promedio);
         cont++;
-        System.out.println("Alumno agregado!: " + cont);
+        System.out.println("Added Student!: " + cont);
+         GsonBuilder gsonBuilder = new  GsonBuilder();
+         Gson gson = gsonBuilder.create();
+         jsonStudentsInformation = gson.toJson(students);
+          
+         System.out.println("jsonStudentsInformation ->" + jsonStudentsInformation);
+         
+         try {
+                      file.append(jsonStudentsInformation);
+                       
+                       file.flush();
+                       file.close();
+
+                    } catch (IOException e){
+                        
+                    }
+           
     }
 
     
@@ -209,6 +230,8 @@ public class RegistrationSystem {
      double promedio = 0;
      int opcion = 0;
      int seguir = 0;
+     
+     
        
      
      while (seguir == 1){
@@ -343,5 +366,7 @@ public class RegistrationSystem {
         }
         
     }
+    
+    
      
 }
