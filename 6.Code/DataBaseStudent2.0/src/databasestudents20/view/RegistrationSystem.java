@@ -24,7 +24,7 @@ public class RegistrationSystem {
         int opcion = 0;
         
         do{
-            System.out.println("--Registro de Alumnos--");
+            System.out.println("--Students Registration--");
             System.out.println("------------------");
             System.out.println("1.-Enter ID (Cedula)");
             System.out.println("2.-Search Student");
@@ -79,10 +79,10 @@ public class RegistrationSystem {
         
         System.out.println("\n\n\n");
         System.out.println("----------------");
-        System.out.println("--Datos de Estudiante--");
+        System.out.println("--Student Data--");
         System.out.println("------------------");
         
-        System.out.print("Cedula: ");
+        System.out.print("CI: ");
         cedula = RegistrationSystem1.dato();
         
         System.out.print("Name: ");
@@ -132,7 +132,7 @@ public class RegistrationSystem {
         
         students[cont] = new StudentsInformation(cedula, name, civilStatus, sex, nameUniversity, racing, semester, nrc, nameSubject, estado, n1, n2, n3, promedio);
         cont++;
-        System.out.println("Alumno agregado!: " + cont);
+        System.out.println("Added Student!: " + cont);
     }
 
     
