@@ -142,13 +142,13 @@ public class RegistrationSystem {
         String cedula;
         int pos = -1;
         int accion = 0;
-            System.out.print("Ingrese Cedula: ");
+            System.out.print("Enter the ID: ");
             cedula = RegistrationSystem1.dato();
             pos = buscarAlumno(cedula);
     
         
         if (pos >= 0) {
-            System.out.println("Datos: " + students[pos].toString());
+            System.out.println("Data: " + students[pos].toString());
             System.out.println("1.-KEEP DATA ???");
             System.out.println("2.-DELETE");
             System.out.println("Option enter....");
@@ -163,7 +163,7 @@ public class RegistrationSystem {
                 case 2:
                     eliminarDatos(pos);
                 default:
-                    System.out.println("Opcion invalida");
+                    System.out.println("Invalid Option");
             }
             
             
@@ -179,10 +179,10 @@ public class RegistrationSystem {
         int pos = -1;
         for (int i = 0; i < cont; i++) {
             if (students[i].getCedula().equals(cedula)){
-                System.out.println("Registro encontrado!");
+                System.out.println("Record Found !");
                 pos = i;  
             } else {
-                System.out.println("Registro nulo!");
+                System.out.println("No Registration!");
                 
             }
          
@@ -214,7 +214,7 @@ public class RegistrationSystem {
      while (seguir == 1){
          System.out.println("\n\n--Menu de estudiantes--");
          System.out.println("---------------------------");
-         System.out.println("1.-Cambiar cedula ");
+         System.out.println("1.-Cambiar ID ");
          System.out.println("2.-Cambiar name ");
          System.out.println("3.-Cambiar civilStatus");
          System.out.println("4.-Cambiar sex");
@@ -223,15 +223,15 @@ public class RegistrationSystem {
          System.out.println("7.-Cambiar semester");
          System.out.println("8.-Cambiar nrc");
          System.out.println("9.-Cambiar nameSubject");
-         System.out.println("10.-Cambiar nota 1");
-         System.out.println("11.-Cambiar nota 2");
-         System.out.println("12.-Cambiar nota 3");
+         System.out.println("10.-Cambiar note 1");
+         System.out.println("11.-Cambiar note 2");
+         System.out.println("12.-Cambiar note 3");
          System.out.println(".-Ingrese la opcion: ");
          opcion = RegistrationSystem1.datoInt();
          
          switch (opcion) {
              case 1:
-                 System.out.println("Cedula: ");
+                 System.out.println("ID: ");
                  cedula  = RegistrationSystem1.dato();
                  students[pos].setCedula(cedula);
                  break;
@@ -276,22 +276,22 @@ public class RegistrationSystem {
                  students[pos].setNameSubject(nameSubject);
                  break;
             case 10:
-                 System.out.println("Nota 1");
+                 System.out.println("Note 1");
                  n1 = RegistrationSystem1.datoDouble();
                  students[pos].setN1(n1);
                  break;
              case 11:
-                 System.out.println("Nota 2");
+                 System.out.println("Note 2");
                  n2 = RegistrationSystem1.datoDouble();
                  students[pos].setN2(n2);
                  break; 
              case 12:
-                 System.out.println("Nota 3");
+                 System.out.println("Note 3");
                  n3 = RegistrationSystem1.datoDouble();
                  students[pos].setN3(n3);
                  break;   
              default :
-                 System.out.println("Opcion invalida!");
+                 System.out.println("Invalid Option!");
          }
          if (opcion <= 10 && opcion <= 12) {
              n1 = students[pos].getN1();
@@ -303,18 +303,18 @@ public class RegistrationSystem {
              students[pos].setPromedio(promedio);
              
              if (promedio >= 3.95) {
-                 estado = "Aprobado";
+                 estado = "Approved";
                  System.out.println("estado");
              } else {
-                 estado = "Reprobado";
+                 estado = "Reprobate";
                  System.out.println(estado);
              }
              students[pos].setEstado(estado);
          }
          System.out.println("-------------------------------");
-         System.out.println("1.-Seguir modificando");
+         System.out.println("1.-Continue to amend");
          System.out.println("2.-Exit");
-         System.out.println("Ingrese su opcion: ");
+         System.out.println("Enter Option: ");
          seguir = RegistrationSystem1.datoInt();
       
      } 
@@ -329,7 +329,7 @@ public class RegistrationSystem {
          for (int i = pos; i < cont; i++) {
              students[i] = students[i + 1];
          }
-         System.out.println("Datos eliminados!");
+         System.out.println("Data deleted!");
          cont--;
         
     }
@@ -337,7 +337,7 @@ public class RegistrationSystem {
     
     private static void listarAlumno() {
         for (int i = 0; i < cont; i++) {
-            System.out.println("\n\n\n--DATOS DE ESTUDIANTES--");
+            System.out.println("\n\n\n--STUDENT DATA--");
             System.out.println("---------------------------------");
             System.out.println(students[i].toString());
         }
