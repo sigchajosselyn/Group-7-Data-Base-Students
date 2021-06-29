@@ -109,13 +109,13 @@ public class RegistrationSystem {
         System.out.print("NameSubject: ");
         nameSubject = RegistrationSystem1.dato();
         
-        System.out.print("Nota N 1: ");
+        System.out.print("Note 1: ");
         n1 = RegistrationSystem1.datoDouble();
         
-        System.out.print("Nota N 2: ");
+        System.out.print("Note 2: ");
         n2 = RegistrationSystem1.datoDouble();
         
-        System.out.print("Nota N 3: ");
+        System.out.print("Note 3: ");
         n3 = RegistrationSystem1.datoDouble();
         
         promedio = (n1 + n2 + n3)/3;
@@ -123,10 +123,10 @@ public class RegistrationSystem {
         System.out.println("Grade point average: " + promedio);
         
         if(promedio >= 3.95) {
-            estado = "Approved";
+            estado = "Aprovado";
             System.out.println(estado);
         } else {
-            estado = "Reprobate";
+            estado = "Reprobado";
             System.out.println(estado);
         }
         
