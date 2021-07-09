@@ -12,7 +12,7 @@ import java.io.IOException;
 
 /**
  *
- * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
+ * @author Futures Programmers ESPE-DCC0
  */
 public class RegistrationSystem {
     
@@ -322,7 +322,7 @@ public class RegistrationSystem {
              n3 = students[pos].getN3();
              
              promedio = (n1+n2+n3)/3;
-             System.out.println("Promedio de notas: " + promedio);
+             System.out.println("grade point average: " + promedio);
              students[pos].setPromedio(promedio);
              
              if (promedio >= 3.95) {
