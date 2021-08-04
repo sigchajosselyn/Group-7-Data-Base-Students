@@ -5,27 +5,36 @@
  */
 package ec.edu.espe.database.model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
  */
-public class StudentsInformation {
+public abstract class StudentsInformation {
     
-     String cedula;
-     String name;
-     String civilStatus;
-     String sex;
-     String nameUniversity;
-     String racing;
-     String semester;
-     String nrc;
-     String nameSubject;
-     String estado;
-     double n1;
-     double n2;
-     double n3;
-     double promedio;
-
+    protected String ci;
+    protected String name;
+    protected String last_name;
+    protected String civilStatus;
+    protected String sex;
+    protected String semester;
+   
+    protected String status; 
+    protected String username;
+    protected String email;
+    protected String phone;
+    protected String password;
+    protected String created_at;
+    protected String university;
+    protected String nrc;
+    protected String subject;
+    
+    protected ArrayList<Double> notes;
+    protected double average_notes;
+	
+    
+     
     public StudentsInformation(String cedula, String name, String civilStatus, String sex, String nameUniversity, String racing, String semester, String nrc, String nameSubject, String estado, double n1, double n2, double n3, double promedio) {
         this.cedula = cedula;
         this.name = name;
