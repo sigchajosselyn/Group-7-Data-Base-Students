@@ -95,6 +95,29 @@ public class NewStudent {
 		lblCivilStatus.setBounds(32, 221, 82, 15);
 		frame.getContentPane().add(lblCivilStatus);
                 
+                JLabel lblSex = new JLabel("Sex");
+		lblSex.setBounds(32, 258, 70, 15);
+		frame.getContentPane().add(lblSex);
+                
+                JLabel lblUniversityName = new JLabel("University Name");
+		lblUniversityName.setBounds(32, 321, 117, 15);
+		frame.getContentPane().add(lblUniversityName);
+                
+                JLabel lblSubject = new JLabel("Subject");
+		lblSubject.setBounds(32, 359, 70, 15);
+		frame.getContentPane().add(lblSubject);
+                
+                JLabel lblSemester = new JLabel("Semester");
+		lblSemester.setBounds(32, 465, 70, 15);
+		frame.getContentPane().add(lblSemester);
+		
+		JLabel lblDate = new JLabel("Date");
+		lblDate.setBounds(600, 82, 70, 15);
+		frame.getContentPane().add(lblDate);
+                
+                JLabel lblPhoneNumber = new JLabel("Phone");
+		lblPhoneNumber.setBounds(600, 125, 64, 15);
+		frame.getContentPane().add(lblPhoneNumber);
         }
     
 }
