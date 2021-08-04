@@ -4,67 +4,32 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.database.view;
+import ec.edu.espe.database.controller.StudentInformationController;
+import ec.edu.espe.database.model.Student;
 import java.io.*;
+import javax.swing.JFrame;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 /**
  *
- * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
+ * @author Futures Programmers ESPE-DCC0
  */
 public class NewStudent {
+        public JFrame frame;
+	private JTextField txtName;
+	private JTextField txtLastName;
+	private JTextField txtDate;
+	private JTextField txtPhone;
+	private JTextField txtEmail;
+	private JTextField txtUsername;
+	private JPasswordField txtPassword;
+	private JTextField txtCI;
+	private JTextField txtUniversityName;
+	public StudentInformationController db_conection;
+	public Student student;
+	private String db_table = "students";
     
-    public static String dato() {
-        String sdato = null;
-        try{
-            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-            sdato = entrada.readLine();
-        } catch (IOException e){
-            System.out.println("Error: " + e.getMessage());
-        }
-        return sdato;
-        
-    }
     
-    public static int datoInt(){
-        try{
-            return(Integer.parseInt(dato()));
-        } catch (NumberFormatException error){
-            return (Integer.MIN_VALUE);
-        }
-    }
-    
-    public static float datoFloat(){
-        try{
-            Float f = new Float(dato());
-            return (f.floatValue());
-        } catch (NumberFormatException error){
-            return (Float.NaN);
-        }
-    }
-    
-    public static double datoDouble(){
-        try{
-            Double d = new Double(dato());
-            return (d.doubleValue());
-        } catch (NumberFormatException error){
-            return (Double.NaN);
-        }
-    }
-    
-    public static char datoChar(){
-        try{
-            char resp = dato().charAt(0);
-            return resp;
-        } catch (Exception error){
-            return ('z');
-        }
-    }
-    
-    public static boolean datoBoolean(){
-        try{
-            return(Boolean.parseBoolean(dato()));
-        } catch(NumberFormatException error){
-            return (false);
-        }
-    }
 }
 
