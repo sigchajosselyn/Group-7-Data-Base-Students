@@ -12,7 +12,7 @@ import org.bson.Document;
 
 /**
  *
- * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
+ * @author  Futures Programmers ESPE-DCC0
  */
 public class StudentInformationController {
     MongoClient mongoClient;
@@ -21,5 +21,16 @@ public class StudentInformationController {
 	Document doc;
 	private String db_name = "students_database";
 	private String db_table;
+        
+public StudentInformationController(String db_table) {
+		this.db_table = db_table;
+		init_database();
+		
+	}
+	
+        
+        	
+
+        
 	
 }
