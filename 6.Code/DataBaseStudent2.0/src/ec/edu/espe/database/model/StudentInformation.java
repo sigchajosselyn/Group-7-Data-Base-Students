@@ -30,7 +30,7 @@ public abstract class StudentInformation {
     protected String nrc;
     protected String subject;
     
-    protected ArrayList<Double> notes;
+    protected ArrayList<Double>notes;
     protected double average_notes;
 	
     public abstract String getCi();
