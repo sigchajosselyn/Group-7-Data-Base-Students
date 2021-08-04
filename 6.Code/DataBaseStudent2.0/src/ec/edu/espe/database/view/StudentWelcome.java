@@ -39,14 +39,13 @@ public class StudentWelcome {
                 frame.getContentPane().add(lblTitle);
 		
 		JButton btnFindStudent = new JButton("List Students");
-		btnFindStudent.addActionListener(new ActionListener(){
-                    
-                    public void actionPerformed(ActionEvent arg0) {
-                        frame.setVisible(false);
+		btnFindStudent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				frame.setVisible(false);
 				find_student_window = new FindStudent();
 				find_student_window.frame.setVisible(true);
-                    }
-                });
+			}
+		});
                 
                 btnFindStudent.setBounds(131, 167, 182, 25);
 		frame.getContentPane().add(btnFindStudent);

@@ -140,6 +140,11 @@ public class NewStudent {
 		frame.getContentPane().add(txtDate);
 		txtDate.setColumns(10);
                 
+                txtPhone = new JTextField();
+		txtPhone.setBounds(698, 123, 114, 19);
+		frame.getContentPane().add(txtPhone);
+		txtPhone.setColumns(10);
+                
            
                                                                          
         }
