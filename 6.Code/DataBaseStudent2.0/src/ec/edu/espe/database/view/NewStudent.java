@@ -169,6 +169,11 @@ public class NewStudent {
 		comboCivilStatus.addItem("Single");
 		comboCivilStatus.addItem("Married");
 		comboCivilStatus.addItem("Widowed");
+                comboCivilStatus.addItem("Separated");
+		comboCivilStatus.addItem("Divorced");
+		comboCivilStatus.setBounds(132, 216, 154, 24);
+                
+                
               
         }
     
