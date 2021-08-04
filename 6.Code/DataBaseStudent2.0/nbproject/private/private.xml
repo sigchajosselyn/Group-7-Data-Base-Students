@@ -3,7 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/view/FindStudent.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/user/Desktop/DataBaseStudent/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/view/NewStudent.java</file>
+            <file>file:/C:/Users/user/Desktop/DataBaseStudent/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/controller/StudentInformationController.java</file>
+            <file>file:/C:/Users/user/Desktop/DataBaseStudent/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/StudentInformation.java</file>
+            <file>file:/C:/Users/user/Desktop/DataBaseStudent/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/view/FindStudent.java</file>
+            <file>file:/C:/Users/user/Desktop/DataBaseStudent/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/Student.java</file>
+=======
+<<<<<<< HEAD
+            <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/Student.java</file>
+=======
+            <file>file:/D:/Escritorio/Group-7-Data-Base-Students/6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/StudentInformation.java</file>
+>>>>>>> 88b28d4c4e0fc92a301755a19b3bd2633fb4db42
+>>>>>>> 20547c880a3f7e124442d64452671dd5cb0283e4
+>>>>>>> fb4c7ae06cad32e96132a08d595ab171a8b95f4f
         </group>
     </open-files>
 </project-private>
