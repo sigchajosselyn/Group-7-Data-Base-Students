@@ -27,7 +27,13 @@ public class StudentWelcome {
         
         private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 846, 418);}
+		frame.setBounds(100, 100, 846, 418);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		lblTitle = new JLabel("Student Database");
+		lblTitle.setBounds(363, 44, 141, 27);}
+        
     
     
 }
