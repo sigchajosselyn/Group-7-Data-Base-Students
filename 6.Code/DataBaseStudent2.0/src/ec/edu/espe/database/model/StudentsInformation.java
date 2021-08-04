@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package databasestudent20.model;
+package ec.edu.espe.database.model;
 
 /**
  *

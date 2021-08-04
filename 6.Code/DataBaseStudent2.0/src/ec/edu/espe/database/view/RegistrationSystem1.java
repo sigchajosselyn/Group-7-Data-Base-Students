@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package databasestudents20.view;
+package ec.edu.espe.database.view;
 import java.io.*;
 
 /**

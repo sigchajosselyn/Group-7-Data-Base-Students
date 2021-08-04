@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package databasestudents20.view;
+package ec.edu.espe.database.view;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import databasestudent20.model.StudentsInformation;
+import ec.edu.espe.database.model.StudentsInformation;
 import java.io.FileWriter;
 import java.io.IOException;
 
