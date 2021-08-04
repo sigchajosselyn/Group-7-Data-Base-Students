@@ -14,7 +14,7 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
+ * @author Future'sProgrammersTech ESPE- DCCO
  */
 public class StudentWelcome {
     public JFrame frame;
@@ -61,6 +61,19 @@ public class StudentWelcome {
 			}
 		});
                 
+                btnAddNewStudent.setBounds(581, 167, 174, 25);
+		frame.getContentPane().add(btnAddNewStudent);
+		
+		JButton btnExit = new JButton("Exit");
+		btnExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				System.exit(0);
+			}
+		});
+		btnExit.setBounds(717, 354, 117, 25);
+		frame.getContentPane().add(btnExit);
+	}
+                
                 
                 
                 
@@ -76,5 +89,3 @@ public class StudentWelcome {
 
         
     
-    
-}
