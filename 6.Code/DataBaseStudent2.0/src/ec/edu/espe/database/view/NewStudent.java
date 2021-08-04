@@ -10,7 +10,7 @@ import java.io.*;
  *
  * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
  */
-public class RegistrationSystem1 {
+public class NewStudent {
     
     public static String dato() {
         String sdato = null;

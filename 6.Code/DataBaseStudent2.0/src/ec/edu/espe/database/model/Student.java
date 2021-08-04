@@ -9,7 +9,7 @@ package ec.edu.espe.database.model;
  *
  * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
  */
-public class StudentsInformation {
+public class Student {
     
      String cedula;
      String name;
@@ -26,7 +26,7 @@ public class StudentsInformation {
      double n3;
      double promedio;
 
-    public StudentsInformation(String cedula, String name, String civilStatus, String sex, String nameUniversity, String racing, String semester, String nrc, String nameSubject, String estado, double n1, double n2, double n3, double promedio) {
+    public Student(String cedula, String name, String civilStatus, String sex, String nameUniversity, String racing, String semester, String nrc, String nameSubject, String estado, double n1, double n2, double n3, double promedio) {
         this.cedula = cedula;
         this.name = name;
         this.civilStatus = civilStatus;
