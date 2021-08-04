@@ -222,7 +222,12 @@ public class NewStudent {
 		comboNCR.addItem("A3840");
 		comboNCR.setBounds(698, 316, 114, 24);
 		frame.getContentPane().add(comboNCR);
-		
+                
+                JButton btnSave = new JButton("Save");
+		btnSave.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {}
+                
+                });
                 
                 
               
