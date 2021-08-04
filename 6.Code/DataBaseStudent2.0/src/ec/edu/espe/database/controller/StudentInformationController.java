@@ -8,6 +8,7 @@ package ec.edu.espe.database.controller;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import ec.edu.espe.database.model.Student;
 import org.bson.Document;
 
 /**
@@ -59,6 +60,10 @@ public boolean insert_student(Student new_student) {
 		}
 		return result;
 	}
+
+public void close_connection() {
+		mongoClient.close();
+	}
 	
 
         
@@ -66,4 +71,11 @@ public boolean insert_student(Student new_student) {
 
         
 	
+        
+        
+        
+        
+        
+        
+        
 }
