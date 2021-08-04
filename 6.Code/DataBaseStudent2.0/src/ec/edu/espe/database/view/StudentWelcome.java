@@ -5,6 +5,9 @@
  */
 package ec.edu.espe.database.view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -32,7 +35,15 @@ public class StudentWelcome {
 		frame.getContentPane().setLayout(null);
 		
 		lblTitle = new JLabel("Student Database");
-		lblTitle.setBounds(363, 44, 141, 27);}
+		lblTitle.setBounds(363, 44, 141, 27);
+                frame.getContentPane().add(lblTitle);
+		
+		JButton btnFindStudent = new JButton("List Students");
+		btnFindStudent.addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent arg0) {
+                    }
+                }
+        }
         
     
     
