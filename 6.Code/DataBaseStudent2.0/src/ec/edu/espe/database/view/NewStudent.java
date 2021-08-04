@@ -155,6 +155,11 @@ public class NewStudent {
 		txtUsername.setBounds(698, 219, 114, 19);
 		frame.getContentPane().add(txtUsername);
 		txtUsername.setColumns(10);
+                
+                txtPassword = new JPasswordField();
+		txtPassword.setBounds(698, 256, 114, 19);
+		frame.getContentPane().add(txtPassword);
+
               
         }
     
