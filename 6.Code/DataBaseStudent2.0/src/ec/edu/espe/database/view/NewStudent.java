@@ -118,6 +118,30 @@ public class NewStudent {
                 JLabel lblPhoneNumber = new JLabel("Phone");
 		lblPhoneNumber.setBounds(600, 125, 64, 15);
 		frame.getContentPane().add(lblPhoneNumber);
+                
+                JLabel lblEmail = new JLabel("Email");
+		lblEmail.setBounds(600, 184, 70, 15);
+		frame.getContentPane().add(lblEmail);
+		
+		JLabel lblUsername = new JLabel("Username");
+		lblUsername.setBounds(600, 221, 96, 15);
+		frame.getContentPane().add(lblUsername);
+                
+                JLabel lblPassword = new JLabel("Password");
+		lblPassword.setBounds(600, 258, 70, 15);
+		frame.getContentPane().add(lblPassword);
+		
+		JLabel lblNrc = new JLabel("NRC");
+		lblNrc.setBounds(600, 321, 70, 15);
+		frame.getContentPane().add(lblNrc);
+                
+                txtDate = new JTextField();
+		txtDate.setBounds(698, 80, 114, 19);
+		frame.getContentPane().add(txtDate);
+		txtDate.setColumns(10);
+                
+           
+                                                                         
         }
     
 }
