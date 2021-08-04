@@ -243,11 +243,21 @@ public class NewStudent {
 					String university = txtUniversityName.getText().toString();
 					String subject = (String) comboSubject.getSelectedItem();
                                         
+                                        student = new Student(ci, name, last_name, civil_status, sex, semester, status, username, email, phone, password, university, ncr, subject);
+					student.setCreatedAt(date);
+					if(db_conection.insert_student(student)) {
+						JOptionPane.showMessageDialog(null, "Student Added Successfully");
+					}else {
+						JOptionPane.showMessageDialog(null, "Ooops, there is an error, try again later");
+					}
+					txtName.setText("");
+					txtLastName.setText("");
+					txtCI.setText("");
+					System.out.println(student);
                                         
                                         
-                }
-                
-                catch (Exception e) {
+                                        
+                } catch (Exception e) {
 					System.out.println(e);
 				}
                         }
