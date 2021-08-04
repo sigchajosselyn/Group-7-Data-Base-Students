@@ -63,6 +63,28 @@ public class NewStudent {
 				new StudentWelcome().frame.setVisible(true);
 			}
 		});
+                
+                
+                btnGoBack.setBounds(12, 618, 117, 25);
+		frame.getContentPane().add(btnGoBack);
+		
+		JLabel lblName = new JLabel("Name");
+		lblName.setBounds(32, 82, 82, 15);
+		frame.getContentPane().add(lblName);
+		
+		JLabel lblLastName = new JLabel("Last Name");
+		lblLastName.setBounds(32, 125, 82, 15);
+		frame.getContentPane().add(lblLastName);
+		
+		txtName = new JTextField();
+		txtName.setBounds(132, 77, 154, 19);
+		frame.getContentPane().add(txtName);
+		txtName.setColumns(10);
+		
+		txtLastName = new JTextField();
+		txtLastName.setBounds(132, 120, 154, 19);
+		frame.getContentPane().add(txtLastName);
+		txtLastName.setColumns(10);
     
 }
 
