@@ -225,8 +225,14 @@ public class NewStudent {
                 
                 JButton btnSave = new JButton("Save");
 		btnSave.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {}
-                
+			public void actionPerformed(ActionEvent arg0) {
+                try {
+					String name = txtName.getText().toString();
+					String last_name = txtLastName.getText().toString();
+					String ci = txtCI.getText().toString();
+					String civil_status = (String) comboCivilStatus.getSelectedItem();
+                }
+                        }
                 });
                 
                 
