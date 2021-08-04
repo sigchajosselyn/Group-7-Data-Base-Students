@@ -190,6 +190,40 @@ public class NewStudent {
                 
 		txtUniversityName.setColumns(10);
                 
+                JComboBox<String> comboSubject = new JComboBox<String>();
+                
+		comboSubject.setBounds(103, 354, 183, 24);
+                
+		comboSubject.addItem("Civil Engineering");
+		comboSubject.addItem("Mechanical Engineering");
+		comboSubject.addItem("Industrial Engineering");
+		comboSubject.addItem("Telecommunications Engineering");
+		comboSubject.addItem("Software Engineering");
+		
+		frame.getContentPane().add(comboSubject);
+		
+		JComboBox<String> comboSemester = new JComboBox<String>();
+		comboSemester.addItem("1 Semester");
+		comboSemester.addItem("2 Semester");
+		comboSemester.addItem("3 Semester");
+		comboSemester.addItem("4 Semester");
+		comboSemester.addItem("5 Semester");
+		comboSemester.addItem("6 Semester");
+		comboSemester.addItem("7 Semester");
+		comboSemester.addItem("8 Semester");
+		comboSemester.setBounds(132, 460, 176, 24);
+		frame.getContentPane().add(comboSemester);
+		
+		JComboBox<String> comboNCR = new JComboBox<String>();
+		comboNCR.addItem("A3707");
+		comboNCR.addItem("A3303");
+		comboNCR.addItem("A3801");
+		comboNCR.addItem("A3234");
+		comboNCR.addItem("A3840");
+		comboNCR.setBounds(698, 316, 114, 24);
+		frame.getContentPane().add(comboNCR);
+		
+                
                 
               
         }
