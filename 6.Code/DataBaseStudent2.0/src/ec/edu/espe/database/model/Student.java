@@ -5,218 +5,250 @@
  */
 package ec.edu.espe.database.model;
 
-<<<<<<< HEAD
+
 /**
  *
  * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
  */
-public class Student {
-    
-}
-=======
+
 import java.util.ArrayList;
 
 /**
  *
  * @author Cristopher Sarmiento Futures Programmers ESPE-DCC0
  */
-<<<<<<<< HEAD:6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/Student.java
-public class Student {
-    
-     String cedula;
-     String name;
-     String civilStatus;
-     String sex;
-     String nameUniversity;
-     String racing;
-     String semester;
-     String nrc;
-     String nameSubject;
-     String estado;
-     double n1;
-     double n2;
-     double n3;
-     double promedio;
 
-    public Student(String cedula, String name, String civilStatus, String sex, String nameUniversity, String racing, String semester, String nrc, String nameSubject, String estado, double n1, double n2, double n3, double promedio) {
-========
-public abstract class StudentsInformation {
+public class Student extends StudentInformation{
     
-    protected String ci;
-    protected String name;
-    protected String last_name;
-    protected String civilStatus;
-    protected String sex;
-    protected String semester;
-   
-    protected String status; 
-    protected String username;
-    protected String email;
-    protected String phone;
-    protected String password;
-    protected String created_at;
-    protected String university;
-    protected String nrc;
-    protected String subject;
-    
-    protected ArrayList<Double> notes;
-    protected double average_notes;
-	
-    
-     
-    public StudentsInformation(String cedula, String name, String civilStatus, String sex, String nameUniversity, String racing, String semester, String nrc, String nameSubject, String estado, double n1, double n2, double n3, double promedio) {
->>>>>>>> 9b2831b6ac64075ef027123a1e65c4b653e79264:6.Code/DataBaseStudent2.0/src/ec/edu/espe/database/model/StudentsInformation.java
-        this.cedula = cedula;
+     public Student(String ci, String name, String last_name, String civilStatus, String sex, String semester, String status, String username, String email, String phone, String password, String university, String nrc, String subject) {
+	this.ci = ci;
         this.name = name;
+        this.last_name = last_name;
         this.civilStatus = civilStatus;
         this.sex = sex;
-        this.nameUniversity = nameUniversity;
-        this.racing = racing;
         this.semester = semester;
-        this.nrc = nrc;
-        this.nameSubject = nameSubject;
-        this.estado = estado;
-        this.n1 = n1;
-        this.n2 = n2;
-        this.n3 = n3;
-        this.promedio = promedio;
-    }
+        this.status= status;		
+        this.username = username;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+        this.university = university;
+        this.nrc =nrc;
+        this.subject = subject;
+		System.out.println("Creating a new student");
+	}
+@Override
+	public String getCi() {
+		return this.ci;
+	}
 
-    public String getCedula() {
-        return cedula;
-    }
+	@Override
+	public String getName() {
+		return this.name;
+	}
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
-    }
+	@Override
+	public String getCivilStatus() {
+		return this.civilStatus;
+	}
 
-    public String getName() {
-        return name;
-    }
+	@Override
+	public String getSex() {
+		return this.sex;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	@Override
+	public String getSemester() {
+		return this.semester;
+	}
 
-    public String getCivilStatus() {
-        return civilStatus;
-    }
+//	@Override
+//	public String getNrc() {
+//		return this.nrc;
+//	}
 
-    public void setCivilStatus(String civilStatus) {
-        this.civilStatus = civilStatus;
-    }
+	@Override
+	public String getStatus() {
+		return this.status;
+	}
 
-    public String getSex() {
-        return sex;
-    }
+	@Override
+	public ArrayList<Double> getNotes() {
+		return null;
+	}
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
+	@Override
+	public double getAverage_notes() {
+		return this.average_notes;
+	}
 
-    public String getNameUniversity() {
-        return nameUniversity;
-    }
 
-    public void setNameUniversity(String nameUniversity) {
-        this.nameUniversity = nameUniversity;
-    }
+	@Override
+	public void setCi(String ci) {
+		this.ci = ci;
+	}
 
-    public String getRacing() {
-        return racing;
-    }
+	@Override
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setRacing(String racing) {
-        this.racing = racing;
-    }
+	@Override
+	public void setCivilStatus(String civilStatus) {
+		this.civilStatus = civilStatus;
+	}
 
-    public String getSemester() {
-        return semester;
-    }
+	@Override
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 
-    public void setSemester(String semester) {
-        this.semester = semester;
-    }
+	@Override
+	public void setSemester(String semester) {
+		this.semester = semester;
+	}
 
-    public String getNrc() {
-        return nrc;
-    }
+//	@Override
+//	public void setNrc(String nrc) {
+//		this.nrc = nrc;
+//	}
 
-    public void setNrc(String nrc) {
-        this.nrc = nrc;
-    }
+	@Override
+	public void setStatus(String status) {
+		this.status = status;
+	}
 
-    public String getNameSubject() {
-        return nameSubject;
-    }
+	@Override
+	public void setNotes(ArrayList<Double> notes) {
+		this.notes = notes;
+	}
 
-    public void setNameSubject(String nameSubject) {
-        this.nameSubject = nameSubject;
-    }
+	@Override
+	public void setAverage_notes(double average_notes) {
+		this.average_notes = average_notes;		
+	}
 
-    public String getEstado() {
-        return estado;
-    }
+	@Override
+	public String getLastName() {
+		return this.last_name;
+	}
 
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
+	@Override
+	public void setLastName(String last_name) {
+		this.last_name = last_name;
+	}
 
-    public double getN1() {
-        return n1;
-    }
 
-    public void setN1(double n1) {
-        this.n1 = n1;
-    }
+	@Override
+	public String getUsername() {
+		return this.username;
+	}
 
-    public double getN2() {
-        return n2;
-    }
 
-    public void setN2(double n2) {
-        this.n2 = n2;
-    }
+	@Override
+	public String getEmail() {
+		return this.email;
+	}
 
-    public double getN3() {
-        return n3;
-    }
 
-    public void setN3(double n3) {
-        this.n3 = n3;
-    }
+	@Override
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public double getPromedio() {
-        return promedio;
-    }
 
-    public void setPromedio(double promedio) {
-        this.promedio = promedio;
-    }
+	@Override
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    
-    
-   @Override
-    public String toString() {
-        return "StudentsInformation" 
-                + "\nCedula: " + cedula 
-                + "\nName: " + name 
-                + "\nCivilStatus: " + civilStatus 
-                + "\nSex: " + sex 
-                + "\nNameUniversity: " + nameUniversity 
-                + "\nRacing: " + racing 
-                + "\nSemester: " + semester 
-                + "\nNrc: " + nrc 
-                + "\nNameSubject: " + nameSubject 
-                + "\nEstado: " + estado
-                + "\nNota 1:" + n1 
-                + "\nNota 2: " + n2 
-                + "\nNota 3: " + n3 
-                + "\nPromedio: " + promedio;
-        
+
+	@Override
+	public String getPhone() {
+		return this.phone;
+	}
+
+
+	@Override
+	public String getPassword() {
+		return this.password;
+	}
+
+
+	@Override
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+
+	@Override
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+	@Override
+	public String getCreatedAt() {
+		return this.created_at;
+	}
+
+
+	@Override
+	public void  setCreatedAt(String date) {
+		this.created_at = date;
+	}
+
+
+	@Override
+	public String getUniversity() {
+		return this.university;
+	}
+
+
+	@Override
+	public String getNCR() {
+		return this.nrc;
+	}
+
+
+	@Override
+	public void setUniversity(String university) {
+		this.university = university;
+	}
+
+
+	@Override
+	public void setNCR(String ncr) {
+		this.nrc = ncr;
+	}
+
+
+	@Override
+	public String getSubject() {
+		return this.subject;
+	}
+
+
+	@Override
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [ci=" + ci + ", name=" + name + ", last_name=" + last_name + ", civilStatus=" + civilStatus
+				+ ", sex=" + sex + ", semester=" + semester + ", status=" + status + ", username=" + username
+				+ ", email=" + email + ", phone=" + phone + ", password=" + password + ", created_at=" + created_at
+				+ ", university=" + university + ", nrc=" + nrc + ", subject=" + subject + ", notes=" + notes
+				+ ", average_notes=" + average_notes + "]";
+	}
 
    
-    }
-
+    
+    
+    
 }
->>>>>>> 9b2831b6ac64075ef027123a1e65c4b653e79264
+
+    
+
