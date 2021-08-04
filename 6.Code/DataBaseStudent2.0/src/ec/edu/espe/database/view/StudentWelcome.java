@@ -8,6 +8,7 @@ package ec.edu.espe.database.view;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+
 /**
  *
  * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
@@ -17,6 +18,16 @@ public class StudentWelcome {
 	JLabel lblTitle;
 	public NewStudent new_student_window;
 	public FindStudent find_student_window;
+        
+        
+        public StudentWelcome() {
+		initialize();
+	}
+        
+        
+        private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 846, 418);}
     
     
 }
