@@ -22,6 +22,7 @@ import javax.swing.JTextField;
  * @author Futures Programmers ESPE-DCC0
  */
 public class NewStudent {
+ 
         public JFrame frame;
 	private JTextField txtName;
 	private JTextField txtLastName;
@@ -35,8 +36,6 @@ public class NewStudent {
 	public StudentInformationController db_conection;
 	public Student student;
 	private String db_table = "students";
-    
-        
         /**
 	 * Create the application.
 	 */
@@ -87,6 +86,16 @@ public class NewStudent {
 		txtLastName.setBounds(132, 120, 154, 19);
 		frame.getContentPane().add(txtLastName);
 		txtLastName.setColumns(10);
+                
+                JLabel lblCi = new JLabel("CI");
+		lblCi.setBounds(32, 184, 70, 15);
+		frame.getContentPane().add(lblCi);
+                
+                JLabel lblCivilStatus = new JLabel("Civil Status");
+		lblCivilStatus.setBounds(32, 221, 82, 15);
+		frame.getContentPane().add(lblCivilStatus);
+                
+        }
     
 }
 
