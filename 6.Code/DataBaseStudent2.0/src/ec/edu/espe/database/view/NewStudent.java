@@ -178,6 +178,18 @@ public class NewStudent {
 		comboSex.addItem("Male");
 		comboSex.addItem("Female");
                 
+                comboSex.setBounds(132, 253, 105, 24);
+                
+		frame.getContentPane().add(comboSex);
+		
+		txtUniversityName = new JTextField();
+                
+		txtUniversityName.setBounds(167, 319, 114, 19);
+                
+		frame.getContentPane().add(txtUniversityName);
+                
+		txtUniversityName.setColumns(10);
+                
                 
               
         }
