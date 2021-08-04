@@ -47,6 +47,31 @@ public class StudentWelcome {
 				find_student_window.frame.setVisible(true);
                     }
                 });
+                
+                btnFindStudent.setBounds(131, 167, 182, 25);
+		frame.getContentPane().add(btnFindStudent);
+		
+		JButton btnAddNewStudent = new JButton("Add New Student");
+		btnAddNewStudent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				frame.setVisible(false);
+				new_student_window = new NewStudent();
+				new_student_window.frame.setVisible(true);
+				
+			}
+		});
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                         }
 
         

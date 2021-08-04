@@ -8,6 +8,7 @@ package ec.edu.espe.database.controller;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import ec.edu.espe.database.model.Student;
 import org.bson.Document;
 
 /**
@@ -58,6 +59,10 @@ public boolean insert_student(Student new_student) {
 			System.out.println("Error to try insert a new element in database");
 		}
 		return result;
+	}
+
+public void close_connection() {
+		mongoClient.close();
 	}
 	
 
