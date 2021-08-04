@@ -22,43 +22,7 @@ import javax.swing.JTextField;
  * @author Futures Programmers ESPE-DCC0
  */
 public class NewStudent {
-<<<<<<< HEAD
-    
-    
-    
-    public static int datoInt(){
-        try{
-            return(Integer.parseInt(dato()));
-        } catch (NumberFormatException error){
-            return (Integer.MIN_VALUE);
-        }
-    }
-    
-    public static float datoFloat(){
-        try{
-            Float f = new Float(dato());
-            return (f.floatValue());
-        } catch (NumberFormatException error){
-            return (Float.NaN);
-        }
-    }
-    
-    public static double datoDouble(){
-        try{
-            Double d = new Double(dato());
-            return (d.doubleValue());
-        } catch (NumberFormatException error){
-            return (Double.NaN);
-        }
-    }
-    
-    public static char datoChar(){
-        try{
-            char resp = dato().charAt(0);
-            return resp;
-        } catch (Exception error){
-            return ('z');
-=======
+
  
         public JFrame frame;
 	private JTextField txtName;
@@ -187,9 +151,11 @@ public class NewStudent {
 		frame.getContentPane().add(txtEmail);
 		txtEmail.setColumns(10);
                 
-           
-                                                                         
->>>>>>> d196373d6562497b610ddf2d7498c9e5842e8af1
+                txtUsername = new JTextField();
+		txtUsername.setBounds(698, 219, 114, 19);
+		frame.getContentPane().add(txtUsername);
+		txtUsername.setColumns(10);
+              
         }
     
 }
