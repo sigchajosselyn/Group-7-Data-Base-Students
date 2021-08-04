@@ -160,6 +160,10 @@ public class NewStudent {
 		txtPassword.setBounds(698, 256, 114, 19);
 		frame.getContentPane().add(txtPassword);
 
+                txtCI = new JTextField();
+		txtCI.setBounds(132, 182, 154, 19);
+		frame.getContentPane().add(txtCI);
+		txtCI.setColumns(10);
               
         }
     
