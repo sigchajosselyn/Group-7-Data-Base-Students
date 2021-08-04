@@ -4,14 +4,16 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.database.view;
+
 import ec.edu.espe.database.controller.StudentInformationController;
 import ec.edu.espe.database.model.Student;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.*;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
