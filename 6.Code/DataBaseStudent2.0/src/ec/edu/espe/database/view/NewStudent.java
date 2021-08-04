@@ -172,6 +172,11 @@ public class NewStudent {
                 comboCivilStatus.addItem("Separated");
 		comboCivilStatus.addItem("Divorced");
 		comboCivilStatus.setBounds(132, 216, 154, 24);
+                frame.getContentPane().add(comboCivilStatus);
+		
+		JComboBox<String> comboSex = new JComboBox<String>();
+		comboSex.addItem("Male");
+		comboSex.addItem("Female");
                 
                 
               
