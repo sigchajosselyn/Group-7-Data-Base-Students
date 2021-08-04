@@ -231,7 +231,14 @@ public class NewStudent {
 					String last_name = txtLastName.getText().toString();
 					String ci = txtCI.getText().toString();
 					String civil_status = (String) comboCivilStatus.getSelectedItem();
+                                        
+                                        
+                                        
                 }
+                
+                catch (Exception e) {
+					System.out.println(e);
+				}
                         }
                 });
                 
