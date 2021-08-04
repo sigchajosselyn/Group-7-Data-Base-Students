@@ -231,6 +231,17 @@ public class NewStudent {
 					String last_name = txtLastName.getText().toString();
 					String ci = txtCI.getText().toString();
 					String civil_status = (String) comboCivilStatus.getSelectedItem();
+                                        String sex = (String) comboSex.getSelectedItem();
+					String semester = (String) comboSemester.getSelectedItem();
+					String status = "Still calculating";
+					String username = txtUsername.getText().toString();
+					String email = txtEmail.getText().toString();
+					String phone = txtPhone.getText().toString();
+					String password = txtPassword.getPassword().toString();
+					String date = txtDate.getText().toString();
+					String ncr = (String) comboNCR.getSelectedItem();
+					String university = txtUniversityName.getText().toString();
+					String subject = (String) comboSubject.getSelectedItem();
                                         
                                         
                                         
