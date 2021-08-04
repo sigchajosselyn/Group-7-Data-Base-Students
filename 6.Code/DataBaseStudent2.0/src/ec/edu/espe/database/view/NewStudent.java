@@ -164,6 +164,11 @@ public class NewStudent {
 		txtCI.setBounds(132, 182, 154, 19);
 		frame.getContentPane().add(txtCI);
 		txtCI.setColumns(10);
+                
+                JComboBox<String> comboCivilStatus = new JComboBox<String>();
+		comboCivilStatus.addItem("Single");
+		comboCivilStatus.addItem("Married");
+		comboCivilStatus.addItem("Widowed");
               
         }
     
