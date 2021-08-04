@@ -5,10 +5,26 @@
  */
 package ec.edu.espe.database.view;
 
+import java.awt.EventQueue;
+
 /**
  *
  * @author Future'sProgrammersTech ESPE- DCCO
  */
 public class StudentInformationGUI {
-    
+    public static void main(String[] args) {
+            
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					StudentWelcome window = new StudentWelcome();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
 }
+    
+
