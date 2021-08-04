@@ -12,17 +12,7 @@ import java.io.*;
  */
 public class NewStudent {
     
-    public static String dato() {
-        String sdato = null;
-        try{
-            BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
-            sdato = entrada.readLine();
-        } catch (IOException e){
-            System.out.println("Error: " + e.getMessage());
-        }
-        return sdato;
-        
-    }
+    
     
     public static int datoInt(){
         try{
