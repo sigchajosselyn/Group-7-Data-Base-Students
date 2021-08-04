@@ -40,10 +40,15 @@ public class StudentWelcome {
 		
 		JButton btnFindStudent = new JButton("List Students");
 		btnFindStudent.addActionListener(new ActionListener(){
+                    
                     public void actionPerformed(ActionEvent arg0) {
+                        frame.setVisible(false);
+				find_student_window = new FindStudent();
+				find_student_window.frame.setVisible(true);
                     }
-                }
-        }
+                });
+                        }
+
         
     
     
