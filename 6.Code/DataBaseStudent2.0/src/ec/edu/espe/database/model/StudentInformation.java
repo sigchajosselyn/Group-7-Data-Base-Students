@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
+ * @author Future'sProgrammersTech ESPE- DCCO
  */
 public abstract class StudentInformation {
     

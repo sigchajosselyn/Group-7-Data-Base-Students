@@ -7,7 +7,7 @@ package ec.edu.espe.database.view;
 
 /**
  *
- * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
+ * @author Future'sProgrammersTech ESPE- DCCO
  */
 public class StudentInformationGUI {
     

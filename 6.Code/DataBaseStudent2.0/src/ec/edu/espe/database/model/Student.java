@@ -8,7 +8,7 @@ package ec.edu.espe.database.model;
 
 /**
  *
- * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
+ * @author Future'sProgrammersTech ESPE- DCCO
  */
 
 import java.util.ArrayList;

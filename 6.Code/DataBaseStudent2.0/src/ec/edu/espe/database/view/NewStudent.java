@@ -263,6 +263,9 @@ public class NewStudent {
                         }
                 });
                 
+                btnSave.setBounds(442, 561, 117, 25);
+		frame.getContentPane().add(btnSave);
+                
                 
               
         }
