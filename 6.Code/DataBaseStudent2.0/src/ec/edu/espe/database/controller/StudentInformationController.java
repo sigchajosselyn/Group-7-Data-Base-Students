@@ -27,7 +27,14 @@ public StudentInformationController(String db_table) {
 		init_database();
 		
 	}
+
+public void init_database() {
+		mongoClient = new MongoClient( "localhost" , 27017 );  
+		db = mongoClient.getDatabase(this.db_name);  
+		table = db.getCollection(this.db_table);  
+	}
 	
+
         
         	
 
