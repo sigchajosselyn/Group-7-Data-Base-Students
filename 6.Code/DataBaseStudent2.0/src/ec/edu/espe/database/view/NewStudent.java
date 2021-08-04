@@ -37,9 +37,7 @@ public class NewStudent {
 	public StudentInformationController db_conection;
 	public Student student;
 	private String db_table = "students";
-        /**
-	 * Create the application.
-	 */
+        
 	public NewStudent() {
 		initialize();
 		db_conection = new StudentInformationController(this.db_table);

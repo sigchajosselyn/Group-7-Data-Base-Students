@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.database.view;
 import ec.edu.espe.database.model.Student;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,16 +21,11 @@ public class FindStudent {
     
      public JFrame frame;
 
-	/**
-	 * Create the application.
-	 */
 	public FindStudent() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
@@ -61,4 +57,3 @@ public class FindStudent {
     
     
     
-}
