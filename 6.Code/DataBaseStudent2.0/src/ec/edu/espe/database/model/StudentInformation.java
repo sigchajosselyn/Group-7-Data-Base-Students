@@ -11,6 +11,7 @@ import java.util.ArrayList;
  *
  * @author Future'sProgrammersTech ESPE- DCCO
  */
+
 public abstract class StudentInformation {
     
     protected String ci;
@@ -32,6 +33,7 @@ public abstract class StudentInformation {
     
     protected ArrayList<Double>notes;
     protected double average_notes;
+    
 	
     public abstract String getCi();
 	public abstract String getName();
