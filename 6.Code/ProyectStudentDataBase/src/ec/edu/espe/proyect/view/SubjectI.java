@@ -48,7 +48,7 @@ public class SubjectI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         jLabel1.setText("SUBJECT");
 
         jLabel2.setText("Nrc");
@@ -138,20 +138,20 @@ public class SubjectI extends javax.swing.JFrame {
         PnlButtomsProviderLayout.setHorizontalGroup(
             PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsProviderLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BtmAdd)
-                .addGap(64, 64, 64)
+                .addGap(72, 72, 72)
                 .addComponent(BtmDelete)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(172, 172, 172))
         );
         PnlButtomsProviderLayout.setVerticalGroup(
             PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsProviderLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(21, 21, 21)
                 .addGroup(PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtmAdd)
-                    .addComponent(BtmDelete))
-                .addContainerGap(33, Short.MAX_VALUE))
+                    .addComponent(BtmDelete)
+                    .addComponent(BtmAdd))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
