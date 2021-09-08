@@ -70,20 +70,19 @@
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                   <Component id="btmStudent" min="-2" pref="81" max="-2" attributes="0"/>
-                  <EmptySpace pref="28" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="btmExit" min="-2" pref="81" max="-2" attributes="0"/>
-                              <Component id="btmSubject" min="-2" pref="81" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                          <Component id="btmUniversity" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="btmExit" min="-2" pref="81" max="-2" attributes="0"/>
+                      <Component id="btmSubject" min="-2" pref="81" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="btmUniversity" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -111,7 +110,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Arial Black" size="24" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Student System"/>
+            <Property name="text" type="java.lang.String" value="STUDENT INFORMATION"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btmStudent">
