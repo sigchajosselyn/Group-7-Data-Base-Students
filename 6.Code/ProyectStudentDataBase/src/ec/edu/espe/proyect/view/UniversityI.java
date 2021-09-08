@@ -157,7 +157,7 @@ public class UniversityI extends javax.swing.JFrame {
         PnlButtomsLayout.setHorizontalGroup(
             PnlButtomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsLayout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
+                .addContainerGap(187, Short.MAX_VALUE)
                 .addComponent(BtmAdd)
                 .addGap(97, 97, 97)
                 .addComponent(BtmDelete)

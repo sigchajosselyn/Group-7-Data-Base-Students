@@ -140,7 +140,7 @@ public class SubjectI extends javax.swing.JFrame {
             .addGroup(PnlButtomsProviderLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BtmAdd)
-                .addGap(72, 72, 72)
+                .addGap(109, 109, 109)
                 .addComponent(BtmDelete)
                 .addGap(172, 172, 172))
         );
