@@ -56,21 +56,21 @@ public class StudenySystem extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setText("Student System");
 
-        btmStudent.setText("Student");
+        btmStudent.setText("STUDENT");
         btmStudent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btmStudentActionPerformed(evt);
             }
         });
 
-        btmSubject.setText("Subject");
+        btmSubject.setText("SUBJECT");
         btmSubject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btmSubjectActionPerformed(evt);
             }
         });
 
-        btmUniversity.setText("University");
+        btmUniversity.setText("UNIVERSITY");
         btmUniversity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btmUniversityActionPerformed(evt);
@@ -113,9 +113,9 @@ public class StudenySystem extends javax.swing.JFrame {
                     .addComponent(btmStudent)
                     .addComponent(btmSubject)
                     .addComponent(btmUniversity))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                .addGap(52, 52, 52)
                 .addComponent(btmExit)
-                .addGap(57, 57, 57))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -124,7 +124,7 @@ public class StudenySystem extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 31, Short.MAX_VALUE))
+                .addGap(0, 21, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
