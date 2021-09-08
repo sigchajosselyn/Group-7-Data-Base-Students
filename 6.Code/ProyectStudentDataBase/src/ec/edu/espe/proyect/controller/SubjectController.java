@@ -30,14 +30,10 @@ public class SubjectController {
     BasicDBObject document = new BasicDBObject(); 
     
     public SubjectController(){
-        try{
-            Mongo mongo = new Mongo("localhost", 27017);
-            DataBase = mongo.getDB("InventoryProduct");
-            collection = DataBase.getCollection("Customer");
-            System.out.println("successful connection");
-        }catch(UnknownHostException ex){
-            Logger.getLogger(SubjectController.class.getName()).log(Level.SEVERE, null, ex);            
-        }
+        Mongo mongo = new Mongo("localhost", 27017);
+        DataBase = mongo.getDB("InventoryProduct");
+        collection = DataBase.getCollection("Customer");
+        System.out.println("successful connection");
     }
     
     

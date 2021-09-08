@@ -50,6 +50,7 @@ public class SubjectWindow extends javax.swing.JFrame {
         BtmDelete = new javax.swing.JButton();
         BtmUpdate = new javax.swing.JButton();
         BtmDisplay = new javax.swing.JButton();
+        btnBack1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -166,6 +167,13 @@ public class SubjectWindow extends javax.swing.JFrame {
             }
         });
 
+        btnBack1.setText("BACK");
+        btnBack1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBack1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout PnlButtomsProviderLayout = new javax.swing.GroupLayout(PnlButtomsProvider);
         PnlButtomsProvider.setLayout(PnlButtomsProviderLayout);
         PnlButtomsProviderLayout.setHorizontalGroup(
@@ -179,7 +187,9 @@ public class SubjectWindow extends javax.swing.JFrame {
                 .addComponent(BtmUpdate)
                 .addGap(64, 64, 64)
                 .addComponent(BtmDisplay)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnBack1)
+                .addGap(26, 26, 26))
         );
         PnlButtomsProviderLayout.setVerticalGroup(
             PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -189,7 +199,8 @@ public class SubjectWindow extends javax.swing.JFrame {
                     .addComponent(BtmAdd)
                     .addComponent(BtmDelete)
                     .addComponent(BtmUpdate)
-                    .addComponent(BtmDisplay))
+                    .addComponent(BtmDisplay)
+                    .addComponent(btnBack1))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -266,6 +277,11 @@ public class SubjectWindow extends javax.swing.JFrame {
        subject.display(txtAreaProvider);
     }//GEN-LAST:event_BtmDisplayActionPerformed
 
+    private void btnBack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack1ActionPerformed
+        StudenySystem studenySystem = new StudenySystem();
+        studenySystem.setVisible(true);
+    }//GEN-LAST:event_btnBack1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -322,6 +338,7 @@ public class SubjectWindow extends javax.swing.JFrame {
     private javax.swing.JButton BtmDisplay;
     private javax.swing.JButton BtmUpdate;
     private javax.swing.JPanel PnlButtomsProvider;
+    private javax.swing.JButton btnBack1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

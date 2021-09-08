@@ -29,14 +29,10 @@ public class UniversityController {
     BasicDBObject document = new BasicDBObject(); 
     
     public UniversityController(){
-        try{
-            Mongo mongo = new Mongo("localhost", 27017);
-            DataBase = mongo.getDB("DataBase");
-            collection = DataBase.getCollection("University");
-            System.out.println("successful connection");
-        }catch(UnknownHostException ex){
-            Logger.getLogger(UniversityController.class.getName()).log(Level.SEVERE, null, ex);            
-        }
+        Mongo mongo = new Mongo("localhost", 27017);
+        DataBase = mongo.getDB("DataBase");
+        collection = DataBase.getCollection("University");
+        System.out.println("successful connection");
     }
     
     

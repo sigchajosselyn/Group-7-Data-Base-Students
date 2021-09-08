@@ -59,6 +59,7 @@ public class StudentWindow extends javax.swing.JFrame {
         BtmDelete = new javax.swing.JButton();
         BtmUpdate = new javax.swing.JButton();
         BtmDisplay = new javax.swing.JButton();
+        btnback = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -207,6 +208,13 @@ public class StudentWindow extends javax.swing.JFrame {
             }
         });
 
+        btnback.setText("BACK");
+        btnback.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout PnlButtomsLayout = new javax.swing.GroupLayout(PnlButtoms);
         PnlButtoms.setLayout(PnlButtomsLayout);
         PnlButtomsLayout.setHorizontalGroup(
@@ -220,6 +228,8 @@ public class StudentWindow extends javax.swing.JFrame {
                 .addComponent(BtmUpdate)
                 .addGap(51, 51, 51)
                 .addComponent(BtmDisplay)
+                .addGap(29, 29, 29)
+                .addComponent(btnback)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PnlButtomsLayout.setVerticalGroup(
@@ -230,7 +240,8 @@ public class StudentWindow extends javax.swing.JFrame {
                     .addComponent(BtmAdd)
                     .addComponent(BtmDelete)
                     .addComponent(BtmUpdate)
-                    .addComponent(BtmDisplay))
+                    .addComponent(BtmDisplay)
+                    .addComponent(btnback))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -257,7 +268,7 @@ public class StudentWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtmAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtmAddActionPerformed
-       
+StudentController studentController = new StudentController();       
      Integer cedula , phone;
      String names,lastName,civilStatus,sex,email; 
      
@@ -328,6 +339,11 @@ public class StudentWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPhoneActionPerformed
 
+    private void btnbackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbackActionPerformed
+        StudenySystem studenySystem = new StudenySystem();
+        studenySystem.setVisible(true);
+    }//GEN-LAST:event_btnbackActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -385,6 +401,7 @@ public class StudentWindow extends javax.swing.JFrame {
     private javax.swing.JButton BtmUpdate;
     private javax.swing.JPanel PnlButtoms;
     private javax.swing.JPanel PnlInput;
+    private javax.swing.JButton btnback;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -51,6 +51,7 @@ public class UniversityWindow extends javax.swing.JFrame {
         BtmDelete = new javax.swing.JButton();
         BtmUpdate = new javax.swing.JButton();
         BtmDisplay = new javax.swing.JButton();
+        btnBack2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtArea = new javax.swing.JTextArea();
         jLabel9 = new javax.swing.JLabel();
@@ -152,6 +153,13 @@ public class UniversityWindow extends javax.swing.JFrame {
             }
         });
 
+        btnBack2.setText("BACK");
+        btnBack2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBack2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout PnlButtomsLayout = new javax.swing.GroupLayout(PnlButtoms);
         PnlButtoms.setLayout(PnlButtomsLayout);
         PnlButtomsLayout.setHorizontalGroup(
@@ -165,6 +173,8 @@ public class UniversityWindow extends javax.swing.JFrame {
                 .addComponent(BtmUpdate)
                 .addGap(51, 51, 51)
                 .addComponent(BtmDisplay)
+                .addGap(32, 32, 32)
+                .addComponent(btnBack2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PnlButtomsLayout.setVerticalGroup(
@@ -175,7 +185,8 @@ public class UniversityWindow extends javax.swing.JFrame {
                     .addComponent(BtmAdd)
                     .addComponent(BtmDelete)
                     .addComponent(BtmUpdate)
-                    .addComponent(BtmDisplay))
+                    .addComponent(BtmDisplay)
+                    .addComponent(btnBack2))
                 .addContainerGap(76, Short.MAX_VALUE))
         );
 
@@ -267,6 +278,11 @@ public class UniversityWindow extends javax.swing.JFrame {
        
     }//GEN-LAST:event_BtmDisplayActionPerformed
 
+    private void btnBack2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack2ActionPerformed
+        StudenySystem studenySystem = new StudenySystem();
+        studenySystem.setVisible(true);
+    }//GEN-LAST:event_btnBack2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -317,6 +333,7 @@ public class UniversityWindow extends javax.swing.JFrame {
     private javax.swing.JLabel Code;
     private javax.swing.JPanel PnlButtoms;
     private javax.swing.JPanel PnlInput;
+    private javax.swing.JButton btnBack2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
