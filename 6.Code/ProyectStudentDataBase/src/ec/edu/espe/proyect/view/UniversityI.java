@@ -12,14 +12,14 @@ import javax.swing.JOptionPane;
  *
  * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
  */
-public class UniversityWindow extends javax.swing.JFrame {
+public class UniversityI extends javax.swing.JFrame {
 
     UniversityController university = new UniversityController();
     
     /**
      * Creates new form Product
      */
-    public UniversityWindow() {
+    public UniversityI() {
         
         
         initComponents();
@@ -37,7 +37,6 @@ public class UniversityWindow extends javax.swing.JFrame {
         PnlInput = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        txtRacing = new javax.swing.JTextField();
         txtSede = new javax.swing.JTextField();
         txtUserUniversity = new javax.swing.JTextField();
         Code = new javax.swing.JLabel();
@@ -45,20 +44,24 @@ public class UniversityWindow extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        txtRacing = new javax.swing.JTextField();
         txtNameUniversity = new javax.swing.JTextField();
         PnlButtoms = new javax.swing.JPanel();
         BtmAdd = new javax.swing.JButton();
         BtmDelete = new javax.swing.JButton();
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityWindow.java
         BtmUpdate = new javax.swing.JButton();
         BtmDisplay = new javax.swing.JButton();
         btnBack2 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtArea = new javax.swing.JTextArea();
         jLabel9 = new javax.swing.JLabel();
+=======
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityI.java
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         jLabel1.setText("UNIVERSITY INFORMATION ");
 
         jLabel6.setText("UserUniversity");
@@ -71,54 +74,72 @@ public class UniversityWindow extends javax.swing.JFrame {
 
         jLabel4.setText("Sede");
 
+        txtRacing.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRacingActionPerformed(evt);
+            }
+        });
+
+        txtNameUniversity.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameUniversityActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout PnlInputLayout = new javax.swing.GroupLayout(PnlInput);
         PnlInput.setLayout(PnlInputLayout);
         PnlInputLayout.setHorizontalGroup(
             PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlInputLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PnlInputLayout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addComponent(jLabel1))
-                    .addGroup(PnlInputLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Code)
+                    .addComponent(Code)
+                    .addComponent(jLabel4))
+                .addGap(93, 93, 93)
+                .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlInputLayout.createSequentialGroup()
+                        .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(43, 43, 43)
-                        .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtUserUniversity, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addComponent(txtSede)
-                            .addComponent(txtCode, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
-                            .addComponent(txtRacing)
-                            .addComponent(txtNameUniversity, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtSede, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PnlInputLayout.createSequentialGroup()
+                                .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtUserUniversity, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(30, 30, 30)
+                                .addComponent(txtRacing, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PnlInputLayout.createSequentialGroup()
+                                .addGap(68, 68, 68)
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtNameUniversity, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PnlInputLayout.createSequentialGroup()
+                        .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(txtCode, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         PnlInputLayout.setVerticalGroup(
             PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlInputLayout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(10, 10, 10)
+                .addGap(32, 32, 32)
                 .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Code)
-                    .addComponent(txtCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel2)
+                        .addComponent(txtNameUniversity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(40, 40, 40)
                 .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtNameUniversity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23)
-                .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtRacing, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
                     .addComponent(txtSede, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(18, 18, 18)
+                    .addComponent(txtRacing, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(74, 74, 74)
                 .addGroup(PnlInputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtUserUniversity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -139,6 +160,7 @@ public class UniversityWindow extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityWindow.java
         BtmUpdate.setText("UPDATE");
         BtmUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,15 +182,18 @@ public class UniversityWindow extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityI.java
         javax.swing.GroupLayout PnlButtomsLayout = new javax.swing.GroupLayout(PnlButtoms);
         PnlButtoms.setLayout(PnlButtomsLayout);
         PnlButtomsLayout.setHorizontalGroup(
             PnlButtomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsLayout.createSequentialGroup()
-                .addGap(46, 46, 46)
+                .addContainerGap(187, Short.MAX_VALUE)
                 .addComponent(BtmAdd)
-                .addGap(47, 47, 47)
+                .addGap(97, 97, 97)
                 .addComponent(BtmDelete)
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityWindow.java
                 .addGap(51, 51, 51)
                 .addComponent(BtmUpdate)
                 .addGap(51, 51, 51)
@@ -176,6 +201,9 @@ public class UniversityWindow extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addComponent(btnBack2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+=======
+                .addGap(178, 178, 178))
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityI.java
         );
         PnlButtomsLayout.setVerticalGroup(
             PnlButtomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,18 +211,17 @@ public class UniversityWindow extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(PnlButtomsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtmAdd)
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityWindow.java
                     .addComponent(BtmDelete)
                     .addComponent(BtmUpdate)
                     .addComponent(BtmDisplay)
                     .addComponent(btnBack2))
                 .addContainerGap(76, Short.MAX_VALUE))
+=======
+                    .addComponent(BtmDelete))
+                .addContainerGap(30, Short.MAX_VALUE))
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityI.java
         );
-
-        txtArea.setColumns(20);
-        txtArea.setRows(5);
-        jScrollPane1.setViewportView(txtArea);
-
-        jLabel9.setText("PRODUCT LIST");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -202,28 +229,17 @@ public class UniversityWindow extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(PnlButtoms, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addComponent(PnlInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 101, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel9)
-                        .addGap(208, 208, 208))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PnlInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(PnlInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(PnlButtoms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(PnlButtoms, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
         );
 
         pack();
@@ -264,19 +280,13 @@ public class UniversityWindow extends javax.swing.JFrame {
         university .delete(codeD); 
     }//GEN-LAST:event_BtmDeleteActionPerformed
 
-    private void BtmUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtmUpdateActionPerformed
+    private void txtRacingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRacingActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRacingActionPerformed
 
-        Integer codeU = Integer.parseUnsignedInt(JOptionPane.showInputDialog("Enter nameUniversityU to update"));
-        String nameUniversityU = JOptionPane.showInputDialog("Enter name of UniversityU  to update");
-        university .update(codeU, nameUniversityU);
-        
-    }//GEN-LAST:event_BtmUpdateActionPerformed
-
-    private void BtmDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtmDisplayActionPerformed
-
-       university .display(txtArea);
-       
-    }//GEN-LAST:event_BtmDisplayActionPerformed
+    private void txtNameUniversityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameUniversityActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameUniversityActionPerformed
 
     private void btnBack2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBack2ActionPerformed
         StudenySystem studenySystem = new StudenySystem();
@@ -300,14 +310,22 @@ public class UniversityWindow extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UniversityWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UniversityI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UniversityWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UniversityI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UniversityWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UniversityI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UniversityWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UniversityI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -320,7 +338,7 @@ public class UniversityWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UniversityWindow().setVisible(true);
+                new UniversityI().setVisible(true);
             }
         });
     }
@@ -328,8 +346,6 @@ public class UniversityWindow extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtmAdd;
     private javax.swing.JButton BtmDelete;
-    private javax.swing.JButton BtmDisplay;
-    private javax.swing.JButton BtmUpdate;
     private javax.swing.JLabel Code;
     private javax.swing.JPanel PnlButtoms;
     private javax.swing.JPanel PnlInput;
@@ -339,9 +355,6 @@ public class UniversityWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea txtArea;
     private javax.swing.JTextField txtCode;
     private javax.swing.JTextField txtNameUniversity;
     private javax.swing.JTextField txtRacing;

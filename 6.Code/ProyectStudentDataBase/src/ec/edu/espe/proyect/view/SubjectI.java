@@ -12,13 +12,13 @@ import javax.swing.JOptionPane;
  *
  * @author Gabriela Sunta Future'sProgrammersTech ESPE- DCCO
  */
-public class SubjectWindow extends javax.swing.JFrame {
+public class SubjectI extends javax.swing.JFrame {
     SubjectController subject = new SubjectController();
 
     /**
      * Creates new form Provider
      */
-    public SubjectWindow() {
+    public SubjectI() {
         
         initComponents();
     }
@@ -42,19 +42,19 @@ public class SubjectWindow extends javax.swing.JFrame {
         txtNameSubject = new javax.swing.JTextField();
         txtTypeOfSchedule = new javax.swing.JTextField();
         txtDaysOfMatter = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtAreaProvider = new javax.swing.JTextArea();
         PnlButtomsProvider = new javax.swing.JPanel();
         BtmAdd = new javax.swing.JButton();
         BtmDelete = new javax.swing.JButton();
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectWindow.java
         BtmUpdate = new javax.swing.JButton();
         BtmDisplay = new javax.swing.JButton();
         btnBack1 = new javax.swing.JButton();
+=======
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         jLabel1.setText("SUBJECT");
 
         jLabel2.setText("Nrc");
@@ -71,72 +71,58 @@ public class SubjectWindow extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setText("Subject List");
-
-        txtAreaProvider.setColumns(20);
-        txtAreaProvider.setRows(5);
-        jScrollPane1.setViewportView(txtAreaProvider);
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNameSubject)
-                            .addComponent(txtTypeOfSchedule)
-                            .addComponent(txtDaysOfMatter)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(45, 45, 45)
-                        .addComponent(txtNrc, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(110, 110, 110)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(157, 157, 157))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(73, 73, 73)
+                        .addComponent(txtNrc, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtDaysOfMatter, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(59, 59, 59)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(43, 43, 43)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtNameSubject, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTypeOfSchedule, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(105, 105, 105))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(265, 265, 265)
+                .addGap(208, 208, 208)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addContainerGap()
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel6)
-                .addGap(2, 2, 2)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtNrc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(33, 33, 33)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(txtNameSubject, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jLabel2)
+                            .addComponent(txtNrc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(txtTypeOfSchedule, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(txtDaysOfMatter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(28, Short.MAX_VALUE))
+                            .addComponent(txtNameSubject, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3))))
+                .addGap(34, 34, 34)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTypeOfSchedule, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtDaysOfMatter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         BtmAdd.setText("ADD");
@@ -153,6 +139,7 @@ public class SubjectWindow extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectWindow.java
         BtmUpdate.setText("UPDATE");
         BtmUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,15 +161,18 @@ public class SubjectWindow extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java
         javax.swing.GroupLayout PnlButtomsProviderLayout = new javax.swing.GroupLayout(PnlButtomsProvider);
         PnlButtomsProvider.setLayout(PnlButtomsProviderLayout);
         PnlButtomsProviderLayout.setHorizontalGroup(
             PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsProviderLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(BtmAdd)
-                .addGap(64, 64, 64)
+                .addGap(109, 109, 109)
                 .addComponent(BtmDelete)
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectWindow.java
                 .addGap(68, 68, 68)
                 .addComponent(BtmUpdate)
                 .addGap(64, 64, 64)
@@ -190,26 +180,35 @@ public class SubjectWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnBack1)
                 .addGap(26, 26, 26))
+=======
+                .addGap(172, 172, 172))
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java
         );
         PnlButtomsProviderLayout.setVerticalGroup(
             PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlButtomsProviderLayout.createSequentialGroup()
-                .addGap(29, 29, 29)
+                .addGap(21, 21, 21)
                 .addGroup(PnlButtomsProviderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BtmAdd)
                     .addComponent(BtmDelete)
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectWindow.java
                     .addComponent(BtmUpdate)
                     .addComponent(BtmDisplay)
                     .addComponent(btnBack1))
                 .addContainerGap(33, Short.MAX_VALUE))
+=======
+                    .addComponent(BtmAdd))
+                .addContainerGap(41, Short.MAX_VALUE))
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(PnlButtomsProvider, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -264,6 +263,7 @@ public class SubjectWindow extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BtmDeleteActionPerformed
 
+<<<<<<< HEAD:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectWindow.java
     private void BtmUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtmUpdateActionPerformed
         
         
@@ -282,6 +282,8 @@ public class SubjectWindow extends javax.swing.JFrame {
         studenySystem.setVisible(true);
     }//GEN-LAST:event_btnBack1ActionPerformed
 
+=======
+>>>>>>> db3c26c6ca4e075707af352cd687ce3d08d5c378:6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java
     /**
      * @param args the command line arguments
      */
@@ -299,14 +301,30 @@ public class SubjectWindow extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SubjectWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SubjectI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SubjectWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SubjectI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SubjectWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SubjectI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SubjectWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SubjectI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -327,7 +345,7 @@ public class SubjectWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SubjectWindow().setVisible(true);
+                new SubjectI().setVisible(true);
             }
         });
     }
@@ -335,8 +353,6 @@ public class SubjectWindow extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtmAdd;
     private javax.swing.JButton BtmDelete;
-    private javax.swing.JButton BtmDisplay;
-    private javax.swing.JButton BtmUpdate;
     private javax.swing.JPanel PnlButtomsProvider;
     private javax.swing.JButton btnBack1;
     private javax.swing.JLabel jLabel1;
@@ -344,10 +360,7 @@ public class SubjectWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea txtAreaProvider;
     private javax.swing.JTextField txtDaysOfMatter;
     private javax.swing.JTextField txtNameSubject;
     private javax.swing.JTextField txtNrc;
