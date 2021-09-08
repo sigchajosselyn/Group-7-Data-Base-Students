@@ -5,9 +5,12 @@
         <group>
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/StudentI.java</file>
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/UniversityI.java</file>
+            <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/model/University.java</file>
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/SubjectI.java</file>
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/controller/StudentController.java</file>
             <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/view/StudenySystem.java</file>
+            <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/model/Student.java</file>
+            <file>file:/C:/Users/ALEJANDRO/Desktop/PROYECTO/Group-7-Data-Base-Students/6.Code/ProyectStudentDataBase/src/ec/edu/espe/proyect/controller/UniversityController.java</file>
         </group>
     </open-files>
 </project-private>
